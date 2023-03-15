@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- SALE.ORDER FORM VIEW -->
+    <record id="sh_sale_form_for_motorcycle_adv" model="ir.ui.view">
+        <field name="name">sh.sale.form.for.motorcycle.adv</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"></field>
+        <field name="arch" type="xml">
+            <button name="action_cancel" position="after">
+                <button name="sh_motorcycle_adv_btn" string="Select Products Advance" type="object" states="draft,sent" class="btn-primary" context="{'sh_motorcycle_adv_so_id':id}" />
+            </button>
+        </field>
+    </record>
+</odoo>

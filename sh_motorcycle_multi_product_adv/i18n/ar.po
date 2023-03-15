@@ -1,0 +1,263 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_motorcycle_multi_product_adv
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-05 12:27+0000\n"
+"PO-Revision-Date: 2020-10-05 12:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__product_attr_ids
+msgid "Attributes"
+msgstr "السمات"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_multi_product_adv.sh_motorcycle_adv_wizard_form_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model,name:sh_motorcycle_multi_product_adv.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,help:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__uom_id
+#: model:ir.model.fields,help:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "وحدة القياس الافتراضية المستخدمة لجميع عمليات المخزون."
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_res_company__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_sale_order__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: sh_motorcycle_multi_product_adv
+#: code:addons/sh_motorcycle_multi_product_adv/wizard/smps_wizard.py:0
+#, python-format
+msgid "Field not Found - "
+msgstr "الحقل غير موجود -"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_res_company__id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_sale_order__id
+msgid "ID"
+msgstr "هوية شخصية"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__default_code
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__default_code
+msgid "Internal Reference"
+msgstr "المرجع الداخلي"
+
+#. module: sh_motorcycle_multi_product_adv
+#: code:addons/sh_motorcycle_multi_product_adv/models/sale_model.py:0
+#: code:addons/sh_motorcycle_multi_product_adv/models/sale_model.py:0
+#, python-format
+msgid "Key value pair for this selection field not found - "
+msgstr "زوج القيمة الرئيسية لحقل التحديد هذا غير موجود -"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_res_company____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__make_id
+msgid "Make"
+msgstr "يصنع"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__mmodel_id
+msgid "Model"
+msgstr "نموذج"
+
+#. module: sh_motorcycle_multi_product_adv
+#: code:addons/sh_motorcycle_multi_product_adv/wizard/smps_wizard.py:0
+#, python-format
+msgid "Model not Found - motorcycle.adv.wizard"
+msgstr "النموذج غير موجود - Motorcycle.adv.wizard"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model,name:sh_motorcycle_multi_product_adv.model_motorcycle_adv_wizard
+msgid "Motorcycle Multi Product Selection Advanced Wizard"
+msgstr "معالج متقدم لاختيار المنتجات المتعددة للدراجات النارية"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,help:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__sale_price
+#: model:ir.model.fields,help:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__sale_price
+msgid "Price at which the product is sold to customers."
+msgstr "السعر الذي يُباع به المنتج للعملاء."
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__product_id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__sh_motorcycle_pro_attr_ids
+msgid "Product Attributes"
+msgstr "سمات المنتج"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__sh_motorcycle_pro_field_ids
+msgid "Product Fields"
+msgstr "حقول المنتج"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__product_ids
+msgid "Products"
+msgstr "منتجات"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__qty
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__qty
+msgid "Qty"
+msgstr "الكمية"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model,name:sh_motorcycle_multi_product_adv.model_motorcycle_adv_wizard_product_line
+msgid "SO Multi Product Selection Advanced Wizard"
+msgstr "معالج متقدم لتحديد المنتجات المتعددة"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model,name:sh_motorcycle_multi_product_adv.model_motorcycle_adv_wizard_product_line_specific
+msgid "SO Multi Product Selection Advanced Wizard Specific"
+msgstr "معالج متقدم لتحديد المنتجات المتعددة محدد"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model,name:sh_motorcycle_multi_product_adv.model_motorcycle_adv_settings
+msgid "Sale Order Multi Product Selection Advanced Settings"
+msgstr "إعدادات متقدمة لتحديد المنتجات المتعددة لأمر البيع"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__sale_price
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__sale_price
+msgid "Sale Price"
+msgstr "سعر البيع"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_res_company__sh_motorcycle_pro_attr_ids
+msgid "Sale Product Attributes"
+msgstr "سمات منتج البيع"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_res_company__sh_motorcycle_pro_field_ids
+msgid "Sale Product Fields"
+msgstr "حقول منتجات البيع"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model,name:sh_motorcycle_multi_product_adv.model_sale_order
+msgid "Sales Order"
+msgstr "طلب المبيعات"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.actions.act_window,name:sh_motorcycle_multi_product_adv.sh_motorcycle_adv_settings_action
+#: model:ir.ui.menu,name:sh_motorcycle_multi_product_adv.sh_motorcycle_adv_settings_menu
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_multi_product_adv.sh_motorcycle_adv_settings_form_view
+msgid "Search Products Settings"
+msgstr "البحث في إعدادات المنتجات"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__motorcycle_adv_wizard_id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__motorcycle_adv_wizard_id_specific
+msgid "Searched Product"
+msgstr "تم البحث في المنتج"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_multi_product_adv.sh_motorcycle_adv_wizard_form_view
+msgid "Select"
+msgstr "تحديد"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_multi_product_adv.sh_motorcycle_adv_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_multi_product_adv.sh_sale_form_for_motorcycle_adv
+msgid "Select Products Advance"
+msgstr "حدد تقدم المنتجات"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__specific_product_ids
+msgid "Specific Products"
+msgstr "منتجات محددة"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__type_id
+msgid "Type"
+msgstr "اكتب"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__uom_id
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__uom_id
+msgid "Unit of Measure"
+msgstr "وحدة القياس"
+
+#. module: sh_motorcycle_multi_product_adv
+#: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__year_id
+msgid "Year"
+msgstr "عام"

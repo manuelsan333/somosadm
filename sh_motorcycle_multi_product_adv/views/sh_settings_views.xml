@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- ADVANCE SALE MULTI PRODUCT SELECTION SETTINGS FORM VIEW -->
+    <record id="sh_motorcycle_adv_settings_form_view" model="ir.ui.view">
+        <field name="name">sh.motorcycle.adv.settings.form.view</field>
+        <field name="model">motorcycle.adv.settings</field>
+        <field name="arch" type="xml">
+            <form string="Search Products Settings" create="false">
+                <group>
+                    <field name="sh_motorcycle_pro_field_ids" widget="many2many_tags" options="{'no_create': True}" />
+                    <field name="sh_motorcycle_pro_attr_ids" widget="many2many_tags" options="{'no_create': True}" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- ADVANCE SALE MULTI PRODUCT SELECTION SETTING ACTION -->
+    <record id="sh_motorcycle_adv_settings_action" model="ir.actions.act_window">
+        <field name="name">Search Products Settings</field>
+        <field name="res_model">motorcycle.adv.settings</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <!-- ADVANCE SALE MULTI PRODUCT SELECTION MENUITEM -->
+    <menuitem id="sh_motorcycle_adv_settings_menu" name="Search Products Settings" action="sh_motorcycle_adv_settings_action" parent="sale.menu_sale_config" groups="base.group_system" />
+</odoo>
