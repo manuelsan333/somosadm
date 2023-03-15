@@ -1,0 +1,261 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_motorcycle_backend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-05 05:28+0000\n"
+"PO-Revision-Date: 2020-10-05 05:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_product_product__motorcycle_ids
+#: model:ir.module.category,name:sh_motorcycle_backend.module_category_sh_motorcycle
+#: model:ir.ui.menu,name:sh_motorcycle_backend.sh_motorcycle_menuitem_root
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_search
+msgid "Auto Parts"
+msgstr "Autoteile"
+
+#. module: sh_motorcycle_backend
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_make_form
+msgid "Auto Parts Make"
+msgstr "Autoteile Fabrikat"
+
+#. module: sh_motorcycle_backend
+#: model:res.groups,name:sh_motorcycle_backend.group_sh_motorcycle_manager
+msgid "Auto Parts Manager"
+msgstr "Autoteile-Manager"
+
+#. module: sh_motorcycle_backend
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_mmodel_form
+msgid "Auto Parts Model"
+msgstr "Autoteile Modell"
+
+#. module: sh_motorcycle_backend
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_type_form
+msgid "Auto Parts Type"
+msgstr "Autoteile Typ"
+
+#. module: sh_motorcycle_backend
+#: model:res.groups,name:sh_motorcycle_backend.group_sh_motorcycle_user
+msgid "Auto Parts User"
+msgstr "Autoteile Benutzer"
+
+#. module: sh_motorcycle_backend
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_year
+msgid "Auto Parts Year"
+msgstr "Autoteile Jahr"
+
+#. module: sh_motorcycle_backend
+#: model:ir.ui.menu,name:sh_motorcycle_backend.sh_motorcycle_menuitem_config
+msgid "Configurations"
+msgstr "Konfigurationen"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type__create_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type__create_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year__display_name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_product_product__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: sh_motorcycle_backend
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_mmodel_search
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_search
+msgid "Group By"
+msgstr "Gruppiere nach"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make__id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type__id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year__id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_product_product__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year____last_update
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_product_product____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type__write_uid
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type__write_date
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: sh_motorcycle_backend
+#: model:ir.actions.act_window,name:sh_motorcycle_backend.sh_motorcycle_make_action
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__make_id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__make_id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__make_id
+#: model:ir.ui.menu,name:sh_motorcycle_backend.sh_motorcycle_make_menuitem
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_mmodel_search
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_search
+msgid "Make"
+msgstr "Machen"
+
+#. module: sh_motorcycle_backend
+#: model:ir.actions.act_window,name:sh_motorcycle_backend.sh_motorcycle_mmodel_action
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__mmodel_id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__mmodel_id
+#: model:ir.ui.menu,name:sh_motorcycle_backend.sh_motorcycle_mmodel_menuitem
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_mmodel_search
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_search
+msgid "Model"
+msgstr "Modell"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model,name:sh_motorcycle_backend.model_motorcycle_motorcycle
+msgid "Motorcycle"
+msgstr "Motorrad"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model,name:sh_motorcycle_backend.model_motorcycle_garage
+msgid "Motorcycle Garage"
+msgstr "Motorrad-Garage"
+
+#. module: sh_motorcycle_backend
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_form
+msgid "Motorcycle Name"
+msgstr "Motorrad-Name"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_make__name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_type__name
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_year__name
+msgid "Name"
+msgstr "Name"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model,name:sh_motorcycle_backend.model_product_product
+msgid "Product"
+msgstr "Produkt"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__product_ids
+msgid "Products"
+msgstr "Produkte"
+
+#. module: sh_motorcycle_backend
+#: model:res.groups,comment:sh_motorcycle_backend.group_sh_motorcycle_user
+msgid "The user will be able to just read motorcycle data."
+msgstr "Der Benutzer wird nur lesen Motorrad Daten in der Lage sein."
+
+#. module: sh_motorcycle_backend
+#: model:res.groups,comment:sh_motorcycle_backend.group_sh_motorcycle_manager
+msgid "The user will have access to CRUD motorcycle data."
+msgstr "Der Benutzer wird Zugriff auf CRUD Motorrad Daten haben."
+
+#. module: sh_motorcycle_backend
+#: model:ir.actions.act_window,name:sh_motorcycle_backend.sh_motorcycle_type_action
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__type_id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_mmodel__type_id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__type_id
+#: model:ir.ui.menu,name:sh_motorcycle_backend.sh_motorcycle_type_menuitem
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_mmodel_search
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_search
+msgid "Type"
+msgstr "Art"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__user_id
+msgid "User"
+msgstr "Nutzer"
+
+#. module: sh_motorcycle_backend
+#: model:ir.actions.act_window,name:sh_motorcycle_backend.sh_motorcycle_motorcycle_action
+#: model:ir.ui.menu,name:sh_motorcycle_backend.sh_motorcycle_menuitem_sub
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_form
+msgid "Vehicle"
+msgstr "Fahrzeug"
+
+#. module: sh_motorcycle_backend
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_product_normal_form
+msgid "Vehicles"
+msgstr "Fahrzeuge"
+
+#. module: sh_motorcycle_backend
+#: model:ir.actions.act_window,name:sh_motorcycle_backend.sh_motorcycle_year_action
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_garage__year_id
+#: model:ir.model.fields,field_description:sh_motorcycle_backend.field_motorcycle_motorcycle__year_id
+#: model:ir.ui.menu,name:sh_motorcycle_backend.sh_motorcycle_year_menuitem
+#: model_terms:ir.ui.view,arch_db:sh_motorcycle_backend.sh_motorcycle_motorcycle_search
+msgid "Year"
+msgstr "Jahr"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model,name:sh_motorcycle_backend.model_motorcycle_make
+msgid "make model"
+msgstr "make"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model,name:sh_motorcycle_backend.model_motorcycle_mmodel
+msgid "model"
+msgstr "model"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model,name:sh_motorcycle_backend.model_motorcycle_type
+msgid "type model"
+msgstr "Typ-Modell"
+
+#. module: sh_motorcycle_backend
+#: model:ir.model,name:sh_motorcycle_backend.model_motorcycle_year
+msgid "year"
+msgstr "Jahr"
