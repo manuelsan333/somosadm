@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id='template' xml:space="preserve">
+    
+    <t t-name='ProductsWidgetControlPanel' t-inherit="point_of_sale.ProductsWidgetControlPanel" t-inherit-mode="extension" owl='1'>
+         <xpath expr='//div[hasclass("products-widget-control")]' position="attributes">
+            <attribute name="t-attf-class">{{ env.pos.config.enable_search  ? 'sh_products_widget_control' : '' }}</attribute>
+        </xpath>
+        <xpath expr='//div[hasclass("products-widget-control")]' position='before'>
+            <div class="sh_motorcycle_search">
+                <t t-if='env.pos.config.enable_search'>
+                    <div class="search-box sh_search_box">
+                        <span class="icon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                        <input list="motorcycle_years" name='motorcycle_year' id='motorcycle_year' placeholder="Search year..." t-on-keyup='SearchMotorcycleyear' />
+                        <datalist id='motorcycle_years'></datalist>
+                        <span t-on-click="clearYearSearch" class="clear-icon">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="search-box sh_search_box">
+                        <span class="icon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                        <input list="motorcycle_models" name='motorcycle_model' id='motorcycle_model' placeholder="Search model..." t-on-keyup='SearchMotorcycleModel' />
+                        <datalist id='motorcycle_models'></datalist>
+                        <span t-on-click="clearModelSearch" class="clear-icon">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="search-box make-search sh_search_box">
+                        <span class="icon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                        <input list="motorcycle_makes" name='motorcycle_make' id='motorcycle_make' placeholder="Search Make..." t-on-keyup='SearchMotorcycleMake' />
+                        <datalist id='motorcycle_makes'></datalist>
+                        <span t-on-click="clear_make_search" class="clear-icon">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class='custom-search-bar sh_search_box'>
+                        <div class="search-box type-search">
+                            <span class="icon">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <input list="motorcycle_types" name='motorcycle_type_name' id='motorcycle_type' placeholder="Search Type..." t-on-keyup="SearchMotorcycleType" />
+                            <datalist id='motorcycle_types'></datalist>
+                            <span t-on-click="clearType_search" class="clear-icon">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </t>
+            </div>
+            
+        </xpath>
+    </t>
+</templates>

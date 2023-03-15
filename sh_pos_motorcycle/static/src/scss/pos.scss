@@ -1,0 +1,37 @@
+.pos .sh_motorcycle_search {display: flex; justify-content: space-around;}
+.pos .sh_motorcycle_search .search-box {font-size: 13px;position: relative;display: flex;align-items: center;}
+.pos .sh_motorcycle_search .search-box input{font-size: 13px;height: 30px;border: none;width: 100px;color: #63717f;padding-left: 38px;padding-right: 35px; outline: none !important;}
+.pos .sh_motorcycle_search .search-box .icon {position: absolute;left: 0;margin-left: 12px;z-index: 1;color: #4f5b66;}
+.pos .sh_motorcycle_search .search-box .clear-icon {position: absolute;right: 0;margin-right: 12px;z-index: 1;color: #4f5b66;cursor: pointer;}
+.product .common_product_tag {left: -26px !important;position: absolute;top: 5%;height: 17px;color: white;width: 50%;line-height: 15px;background: gray;transform: rotate(-53deg);padding: 1px 15px 0 17px;}
+.product .product_details{right: 0px;}
+.sh_pos_product_details .product_details_tbl{width: 100%;}
+.pos .sh_motorcycle_search .sh_search_box{margin: 8px;}
+.pos .pos-rightheader.sh_main_right_header .header-button{padding-left: 10px;padding-right: 10px;}
+.pos .pos-rightheader.sh_main_right_header .status-buttons-portal .status-buttons .oe_status{padding: 14px 6px;}
+.pos .sh_pos_product_details .product_details_tbl thead{ background: #4A4F59;color: #fff;text-transform: capitalize;position: sticky;top: 0;}
+.pos .sh_pos_product_details .product_details_tbl thead th{padding: 10px 10px;font-size: 14px;}
+.pos .sh_pos_product_details .product_details_tbl tbody td{padding: 10px 10px;font-size: 15px; word-break: break-word;text-transform: capitalize;}
+.pos .sh_pos_product_details .product_details_tbl thead th.sh_make_th,
+.pos .sh_pos_product_details .product_details_tbl thead th.sh_model_th,
+.pos .sh_pos_product_details .product_details_tbl thead th.sh_start_th,
+.pos .sh_pos_product_details .product_details_tbl thead th.sh_end_th{width: 25%;}
+.pos .sh_pos_product_details .product_details_tbl tbody tr:nth-child(odd) {background: #E0E2E6;}
+.pos .sh_pos_product_details .product_details_tbl tbody tr:hover{color: #fff; background-color: #017e84; cursor: pointer;}
+.pos .sh_pos_product_details .title{padding: 15px;}
+.pos .sh_pos_product_details main.body{margin: 0px;max-height: 180px; min-height: 180px; overflow: auto;}
+.product-image-icon {position: absolute; bottom: 0px; font-size: 20px; right: 0px; line-height: 13px; border-radius: 2px; z-index: 1000; padding: 3px;}
+.product-image-icon.sh_is_enlarge { right: 22px;}
+@media (min-width: 992px){
+    .pos .pos-rightheader.sh_main_right_header .status-buttons-portal .status-buttons .oe_status:first-child{white-space: nowrap;width: 90px;overflow: hidden;text-overflow: ellipsis;}
+
+}
+@media (max-width: 767.98px){
+    .pos .sh_pos_product_details{padding: 10px 0px;}
+    .pos .sh_pos_product_details .popup{max-width: 320px !important;width: 320px !important;}
+    .pos .sh_product:active{border: 2px solid #017e84;}
+    .pos .sh_pos_product_details .product_details_tbl thead,
+    .pos .sh_pos_product_details .product_details_tbl tbody td{white-space: nowrap;}
+    .sh_motorcycle_search .sh_hide_search{display: none !important;}
+    .sh_motorcycle_search {overflow: auto;}
+}

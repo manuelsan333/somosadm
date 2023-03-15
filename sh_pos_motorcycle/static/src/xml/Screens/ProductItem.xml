@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id='template' xml:space="preserve">
+    <t t-name='ProductItem' t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension" owl='1'>
+        <xpath expr='//span[hasclass("price-tag")]' position='after'>
+            <t t-if='props.product.sh_is_common_product'>
+                <span class="common_product_tag">Common</span>
+            </t>
+        </xpath>
+        <xpath expr='//div[hasclass("product-name")]' position='after'>
+            <t t-if='!props.product.sh_is_common_product and props.product.motorcycle_ids.length > 0'>
+                <div class="product-image-icon" t-attf-class="{{ env.pos.config.sh_enable_image ? 'sh_is_enlarge' : '' }}">
+                    <i t-on-click="() => this.trigger('click_on_detail', props.product)" class="fa fa-building-o " aria-hidden="true"></i>
+                </div>
+            </t>
+        </xpath>
+    </t>
+</templates>
