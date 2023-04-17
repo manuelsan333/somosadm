@@ -60,5 +60,5 @@
     </record>
 
     <!-- make menuitem -->
-    <menuitem id="sh_motorcycle_mmodel_menuitem" action="sh_motorcycle_mmodel_action" parent="sh_motorcycle_menuitem_config" sequence="3" />
+    <!-- <menuitem id="sh_motorcycle_mmodel_menuitem" action="sh_motorcycle_mmodel_action" parent="sh_motorcycle_menuitem_config" sequence="3" /> -->
 </odoo>
