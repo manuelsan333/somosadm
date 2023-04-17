@@ -2,15 +2,15 @@
 <odoo>
     <!-- menuitem -->
     <!-- Motorcycle menuitem root -->
-    <menuitem
+    <!-- <menuitem
 	    id="sh_motorcycle_menuitem_root"
 	    sequence="1"
 	    name="Auto Parts"
 	    groups="sh_motorcycle_backend.group_sh_motorcycle_user,sh_motorcycle_backend.group_sh_motorcycle_manager" 
 	    web_icon="sh_motorcycle_backend,static/src/img/menu_icon.png"
-    />
+    /> -->
 
-    <menuitem id="sh_motorcycle_menuitem_config" sequence="3" name="Configurations" parent="sh_motorcycle_menuitem_root" groups="sh_motorcycle_backend.group_sh_motorcycle_manager" />
+    <!-- <menuitem id="sh_motorcycle_menuitem_config" sequence="3" name="Configurations" parent="sh_motorcycle_menuitem_root" groups="sh_motorcycle_backend.group_sh_motorcycle_manager" /> -->
     <!-- form view -->
     <record id="sh_motorcycle_motorcycle_form" model="ir.ui.view">
         <field name="name">sh.motorcycle.motorcycle</field>
@@ -106,7 +106,7 @@
     </record>
 
     <!-- Menu Item -->
-    <menuitem
+    <!-- <menuitem
         id="sh_motorcycle_menuitem_sub"
         sequence="1"
         name="Vehicle"
@@ -133,6 +133,6 @@
 		name="Product Variants"
 		parent="sh_motorcycle_products_main_menu"
 		action='product.product_normal_action_sell'
-	/>
+	/> -->
     
 </odoo>

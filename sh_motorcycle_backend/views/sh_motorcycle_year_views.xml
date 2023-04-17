@@ -37,5 +37,5 @@
     </record>
 
     <!-- Menu Item -->
-    <menuitem id="sh_motorcycle_year_menuitem" action="sh_motorcycle_year_action" parent="sh_motorcycle_menuitem_config" sequence="4" />
+    <!-- <menuitem id="sh_motorcycle_year_menuitem" action="sh_motorcycle_year_action" parent="sh_motorcycle_menuitem_config" sequence="4" /> -->
 </odoo>
