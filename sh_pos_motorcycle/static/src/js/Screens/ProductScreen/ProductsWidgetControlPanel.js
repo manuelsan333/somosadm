@@ -19,9 +19,9 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                 var motorcycle_makes = $(document).find('#motorcycle_makes')
                 var motorcycle_models = $(document).find('#motorcycle_models')
                 var motorcycle_years = $(document).find('#motorcycle_years')
-                $(document).find('#motorcycle_make').attr({ disabled: true })
-                $(document).find('#motorcycle_model').attr({ disabled: true })
-                $(document).find('#motorcycle_year').attr({ disabled: true })
+                //$(document).find('#motorcycle_make').attr({ disabled: true })
+                //$(document).find('#motorcycle_model').attr({ disabled: true })
+                //$(document).find('#motorcycle_year').attr({ disabled: true })
                 if (motorcycle_types.val()) {
                     $(document).find('#motorcycle_make').attr({ disabled: false })
                 }
@@ -49,29 +49,29 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                 $(document).find('#motorcycle_type').val('')
                 $(document).find('#motorcycle_make').val('')
                 $(document).find('#motorcycle_model').val('')
-                $(document).find('#motorcycle_make').attr({ disabled: true })
+                //$(document).find('#motorcycle_make').attr({ disabled: true })
                 // $(document).find('#motorcycle_makes').find('option').remove()
-                $(document).find('#motorcycle_model').attr({ disabled: true })
+                //$(document).find('#motorcycle_model').attr({ disabled: true })
                 // $(document).find('#motorcycle_models').find('option').remove()
                 $(document).find('#motorcycle_year').val('')
-                $(document).find('#motorcycle_year').attr({ disabled: true })
+                //$(document).find('#motorcycle_year').attr({ disabled: true })
                 // $(document).find('#motorcycle_years').find('option').remove()
                 this.trigger('clearMotorCycleSearch')
             }
             clear_make_search(event) {
                 $(document).find('#motorcycle_make').val('')
                 $(document).find('#motorcycle_model').val('')
-                $(document).find('#motorcycle_model').attr({ disabled: true })
+                //$(document).find('#motorcycle_model').attr({ disabled: true })
                 // $(document).find('#motorcycle_models').find('option').remove()
                 $(document).find('#motorcycle_year').val('')
-                $(document).find('#motorcycle_year').attr({ disabled: true })
+                //$(document).find('#motorcycle_year').attr({ disabled: true })
                 // $(document).find('#motorcycle_years').find('option').remove()
                 this.trigger('clearMotorCycleSearch')
             }
             clearModelSearch(event) {
                 $(document).find('#motorcycle_model').val('')
                 $(document).find('#motorcycle_year').val('')
-                $(document).find('#motorcycle_year').attr({ disabled: true })
+                //$(document).find('#motorcycle_year').attr({ disabled: true })
                 // $(document).find('#motorcycle_years').find('option').remove()
                 this.trigger('clearMotorCycleSearch')
             }
@@ -175,6 +175,9 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                     })
                 }
                 this.trigger('search-motorcycle', { product_ids: product_lst });
+            }
+            PerformSearch(event) {
+                console.log("performing search...");
             }
         }
 
