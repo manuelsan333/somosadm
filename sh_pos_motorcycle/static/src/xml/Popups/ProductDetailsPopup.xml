@@ -8,25 +8,6 @@
                     Details
                 </header>
                 <main class="body">
-                    <!-- start tabs -->
-                    <!-- Tabs navs -->
-                    <ul class="nav nav-tabs nav-fill mb-3" id="detailes-headers" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="header-tab-1" data-mdb-toggle="tab"
-                                href="#content-tabs-1" role="tab" aria-controls="ex2-tabs-1" aria-selected="true">
-                                Especificaciones
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="header-tab-2" data-mdb-toggle="tab" 
-                                href="#content-tabs-2" role="tab" aria-controls="ex2-tabs-2" aria-selected="false">
-                                Vehiculos Relacionados
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Tabs navs -->
-
-                    <!-- Tabs content -->
                     <div class="tab-content" id="details-content">
                         <div class="tab-pane fade show active" id="content-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
                             Especificaciones del producto:
@@ -41,9 +22,6 @@
                                         <t t-foreach='props.details' t-as='detail' t-key="detail.id">
                                             <tr>
                                                 <td>
-                                                    <t t-js="ctx">
-                                                        console.log("details are", detail);
-                                                    </t>
                                                     especificación
                                                 </td>
                                                 <td>
@@ -55,6 +33,7 @@
                                 </table>
                             </t>
                         </div>
+                        </br>
                         <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
                             <table class='product_details_tbl' >
                                 <thead>
@@ -91,6 +70,10 @@
                                 </tbody>
                             </table>
                         </div>
+                        </br>
+                        <p>
+                            <t t-esc='props.details' />
+                        </p>
                     </div>
                     <!-- Tabs content -->
                     <!-- end tabs -->
