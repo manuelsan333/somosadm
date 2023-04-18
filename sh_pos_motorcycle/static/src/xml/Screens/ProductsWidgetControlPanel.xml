@@ -50,6 +50,9 @@
                             </span>
                         </div>
                     </div>
+                    <div class="search-box sh_search_box">
+                        <button id="motorcycle_search_button" type="button" class="btn btn-primary" t-on-click="PerformSearch">Buscar</button>
+                    </div>
                 </t>
             </div>
             
