@@ -104,7 +104,7 @@ msgstr "No se encontró el par clave-valor para este campo de selección -"
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_res_company____last_update
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_sale_order____last_update
 msgid "Last Modified on"
-msgstr "Última modificación el"
+msgstr "Última modificación
 
 #. module: sh_motorcycle_multi_product_adv
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__write_uid
@@ -120,12 +120,12 @@ msgstr "Actualizado por última vez por"
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line__write_date
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard_product_line_specific__write_date
 msgid "Last Updated on"
-msgstr "Ultima actualización en"
+msgstr "Ultima actualización"
 
 #. module: sh_motorcycle_multi_product_adv
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__make_id
 msgid "Make"
-msgstr "Hacer"
+msgstr "Marca"
 
 #. module: sh_motorcycle_multi_product_adv
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__mmodel_id
@@ -168,7 +168,7 @@ msgstr "Atributos del producto"
 #. module: sh_motorcycle_multi_product_adv
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_settings__sh_motorcycle_pro_field_ids
 msgid "Product Fields"
-msgstr "Campos de producto"
+msgstr "Campos del producto"
 
 #. module: sh_motorcycle_multi_product_adv
 #: model:ir.model.fields,field_description:sh_motorcycle_multi_product_adv.field_motorcycle_adv_wizard__product_ids
