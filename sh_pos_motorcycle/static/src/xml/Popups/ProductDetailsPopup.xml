@@ -5,12 +5,11 @@
         <div role="dialog" class="modal-dialog sh_pos_product_details">
             <div class="popup popup-alert">
                 <header class="title">
-                    Details
+                    Detalles
                 </header>
                 <main class="body">
                     <div class="tab-content" id="details-content">
                         <div class="tab-pane fade show active" id="content-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
-                            Especificaciones del producto:
                             <t t-foreach='props.details' t-as='detail' t-key="detail.id">
                                 <table class='product_details_tbl' >
                                     <thead>
@@ -33,7 +32,7 @@
                                 </table>
                             </t>
                         </div>
-                        </br>
+                        <br>
                         <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
                             <table class='product_details_tbl' >
                                 <thead>
@@ -44,6 +43,7 @@
                                 </thead>
                                 <tbody>
                                     <t t-foreach='props.details' t-as='detail' t-key="detail.id">
+                                        <span><t t-esc='detail'/></span>
                                         <tr>
                                             <td>
                                                 <t t-if="detail.make_id and env.pos.db.motorcycle_make_by_id and env.pos.db.motorcycle_make_by_id[detail.make_id] and env.pos.db.motorcycle_make_by_id[detail.make_id].display_name">
@@ -70,10 +70,6 @@
                                 </tbody>
                             </table>
                         </div>
-                        </br>
-                        <p>
-                            <t t-esc='props.details' />
-                        </p>
                     </div>
                     <!-- Tabs content -->
                     <!-- end tabs -->
