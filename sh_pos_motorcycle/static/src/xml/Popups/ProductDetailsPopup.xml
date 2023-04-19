@@ -32,7 +32,7 @@
                                 </table>
                             </t>
                         </div>
-                        <br>
+                        <br></br>
                         <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
                             <table class='product_details_tbl' >
                                 <thead>
