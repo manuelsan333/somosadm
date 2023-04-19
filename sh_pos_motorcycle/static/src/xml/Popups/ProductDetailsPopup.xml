@@ -5,7 +5,7 @@
         <div role="dialog" class="modal-dialog sh_pos_product_details">
             <div class="popup popup-alert">
                 <header class="title">
-                    Detalles <t t-esc='props.product.name'/>
+                    Detalles <t t-esc='props.product'/>
                 </header>
                 <main class="body">
                     <div class="tab-content" id="details-content">
