@@ -43,7 +43,7 @@
                                 </thead>
                                 <tbody>
                                     <t t-foreach='props.details' t-as='detail' t-key="detail.id">
-                                        <span><t t-esc='detail'/></span>
+                                        <span><t t-esc='detail.name'/></span>
                                         <tr>
                                             <td>
                                                 <t t-if="detail.make_id and env.pos.db.motorcycle_make_by_id and env.pos.db.motorcycle_make_by_id[detail.make_id] and env.pos.db.motorcycle_make_by_id[detail.make_id].display_name">
