@@ -21,6 +21,11 @@ odoo.define('sh_pos_motorcycle.ProductItem', function (require, factory) {
                 var motorcycle_id = Product.motorcycle_ids
                 var specification_line = Product.specification_lines
 
+                console.log("evento");
+                console.log(event);
+                console.log("product loaded");
+                console.log(Product);
+
                 var details = []
                 var specs = []
 
