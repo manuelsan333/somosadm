@@ -41,6 +41,7 @@ odoo.define('sh_pos_motorcycle.ProductItem', function (require, factory) {
                 this.showPopup('ProductDetailsPopup', {
                     details: details,
                     product: Product.name,
+                    pid: Product.id,
                     specs: specs,
                 })
 
