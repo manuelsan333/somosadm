@@ -46,6 +46,14 @@ odoo.define("sh_pos_order_warehouse.models", function (require) {
                     self.db.motorcycle_year_by_id[motorcycle_year.id] = motorcycle_year
                 })
             }
+
+            var  productSpecs = loadedData['sh.product.specification'] || [];
+            if(productSpecs){
+                console.log("specs loaded");
+                _.each(productSpecs, function (spec) {  
+                    console.log(spec.name + ": " + spec.value);
+                })
+            }
         }
         
     }

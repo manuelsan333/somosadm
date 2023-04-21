@@ -16,6 +16,7 @@ odoo.define('sh_pos_motorcycle.pos', function (require) {
             this.motorcycle_model_by_id = {};
             this.motorcycle_make_by_id = {};
             this.motorcycle_year_by_id = {};
+            this.specs = [];
         },
         get_motorcycle_type: function () {
             return this.motorcycle_type
