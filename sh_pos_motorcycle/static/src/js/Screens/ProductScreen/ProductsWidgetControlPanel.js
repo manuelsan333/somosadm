@@ -177,15 +177,39 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                 this.trigger('search-motorcycle', { product_ids: product_lst });
             }
             PerformSearch(event) {
+                results = []
                 console.log("performing search...");
                 var type = $(document).find('#motorcycle_type').val();
                 console.log("type: " + type);
+
+                var res = this.env.pos.db.get_make_by_type(event.target.value)
+                _.each(res, function (each) {
+                    console.log("each...");
+                    console.log(each);
+                    console.log("make id...");
+                    console.log(each.make_id);
+                    console.log("make id -> 1...");
+                    console.log(each.make_id[1]);
+                })
+
                 var make = $(document).find('#motorcycle_make').val();
-                console.log("make" + make);
+                console.log("make: " + make);
+
+                var res_make = this.env.pos.db.get_model_by_make_and_type(make, type)
+
+                _.each(res_make, function (each) {
+                    console.log("each +++");
+                    console.log(each)
+                    console.log("display name +++");
+                    console.log(each.display_name)
+                })
+
                 var model = $(document).find('#motorcycle_model').val();
-                console.log("model" + model);
+                console.log("model: " + model);
                 var year = $(document).find('#motorcycle_year').val();
-                console.log("year" + year);
+                console.log("year: " + year);
+
+
             }
         }
 
