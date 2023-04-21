@@ -178,6 +178,14 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
             }
             PerformSearch(event) {
                 console.log("performing search...");
+                var type = $(document).find('#motorcycle_type').val();
+                console.log("type: " + type);
+                var make = $(document).find('#motorcycle_make').val();
+                console.log("make" + make);
+                var model = $(document).find('#motorcycle_model').val();
+                console.log("model" + model);
+                var year = $(document).find('#motorcycle_year').val();
+                console.log("year" + year);
             }
         }
 
