@@ -9,6 +9,7 @@
                 </header>
                 <main class="body">
                     <div class="tab-content" id="details-content">
+                        <!-- 
                         <div class="tab-pane fade show active" id="content-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
                             <t t-foreach='props.details' t-as='detail' t-key="detail.id">
                                 <table class='product_details_tbl' >
@@ -17,7 +18,7 @@
                                         <th class="sh_model_th">Valor</th>
                                     </thead>
                                     <tbody>
-                                        <!-- specification_lines -->
+                                        # TODO: specification lines
                                         <t t-foreach='props.details' t-as='detail' t-key="detail.id">
                                             <tr>
                                                 <td>
@@ -32,7 +33,8 @@
                                 </table>
                             </t>
                         </div>
-                        <br></br>
+                        <br></br> 
+                        -->
                         <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
                             <table class='product_details_tbl' >
                                 <thead>
