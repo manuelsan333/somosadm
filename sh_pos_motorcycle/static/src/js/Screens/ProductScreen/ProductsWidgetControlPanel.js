@@ -19,9 +19,9 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                 var motorcycle_makes = $(document).find('#motorcycle_makes')
                 var motorcycle_models = $(document).find('#motorcycle_models')
                 var motorcycle_years = $(document).find('#motorcycle_years')
-                //$(document).find('#motorcycle_make').attr({ disabled: true })
-                //$(document).find('#motorcycle_model').attr({ disabled: true })
-                //$(document).find('#motorcycle_year').attr({ disabled: true })
+                $(document).find('#motorcycle_make').attr({ disabled: false })
+                $(document).find('#motorcycle_model').attr({ disabled: false })
+                $(document).find('#motorcycle_year').attr({ disabled: false })
                 if (motorcycle_types.val()) {
                     $(document).find('#motorcycle_make').attr({ disabled: false })
                 }
@@ -80,7 +80,12 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                 this.trigger('clearMotorCycleSearch')
             }
             SearchMotorcycleType(event) {
+                /**
                 var motorcycle_make = $(document).find('#motorcycle_makes')
+                
+                console.log("motor cycle make");
+                console.log(motorcycle_make);
+                
                 if (event.target.value != '') {
                     $(document).find('#motorcycle_make').attr({ disabled: false })
                 } else {
@@ -88,7 +93,14 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                     this.clear_make_search()
                 }
                 this.state.searchWord = event.target.value
+                
+                console.log("search word");
+                console.log(this.state.searchWord);
+                
                 var res = this.env.pos.db.get_make_by_type(event.target.value)
+                
+                console.log("res fetch by type");
+                console.log(res);
 
                 _.each(res, function (each) {
                     var option = document.createElement('option')
@@ -99,10 +111,15 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                             $(a[i]).remove()
                         }
                     }
+                    console.log("motor cycle make found");
+                    console.log(val);
+                    
                     motorcycle_make.append(val)
                 })
+                **/
             }
             SearchMotorcycleMake(event) {
+                /**
                 var motorcycle_model = $(document).find('#motorcycle_models')
                 if (event.target.value != '') {
                     $(document).find('#motorcycle_model').attr({ disabled: false })
@@ -124,8 +141,10 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                     }
                     motorcycle_model.append(val)
                 })
+                **/
             }
             SearchMotorcycleModel(event) {
+                /**
                 var motorcycle_year = $(document).find('#motorcycle_years')
                 if (event.target.value != '') {
                     $(document).find('#motorcycle_year').attr({ disabled: false })
@@ -133,6 +152,10 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                     // $(document).find('#motorcycle_years').find('option').remove()
                     this.clearModelSearch()
                 }
+                
+                console.log("--- search motor cycle model ---");
+                console.log(event.target.value);
+                
                 var res = this.env.pos.db.get_motorcycle_by_model(event.target.value)
                 this.motorcycle_results = res
                 if (res.length > 0) {
@@ -151,11 +174,23 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                         }
                     })
                 }
+                **/
 
             }
             SearchMotorcycleyear(event) {
+                /**
+                console.log("search event year");
                 var product_lst = []
-                var Products = this.env.pos.db.product_by_id
+                var Products = this.env.pos.db.product_by_id;
+                console.log("products are");
+                console.log(Products);
+                
+                console.log("enable common search");
+                console.log(this.env.pos.config.enable_common_search);
+                
+                console.log("enable search");
+                console.log(this.env.pos.config.enable_search);
+                
                 if (this.env.pos.config.enable_common_search && this.env.pos.config.enable_search) {
                     _.each(Products, function (product) {
                         if (product.sh_is_common_product) {
@@ -163,6 +198,10 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                         }
                     })
                 }
+                
+                console.log("motor cycle results");
+                console.log(this.motorcycle_results);
+                
                 if (this.motorcycle_results) {
                     _.each(this.motorcycle_results, function (each) {
                         if (each) {
@@ -174,42 +213,104 @@ odoo.define('sh_pos_motorcycle.ProductsWidgetControlPanel', function (require, f
                         }
                     })
                 }
-                this.trigger('search-motorcycle', { product_ids: product_lst });
+                
+                console.log("final product list is");
+                console.log(product_lst);
+                //this.trigger('search-motorcycle', { product_ids: product_lst });
+                **/
             }
+            
             PerformSearch(event) {
-                results = []
-                console.log("performing search...");
+                // type search
+                var motorcycle_make = $(document).find('#motorcycle_makes');
+                
                 var type = $(document).find('#motorcycle_type').val();
-                console.log("type: " + type);
+                
+                if (type != '') {
+                    this.state.searchWord = type;
+                    var res = this.env.pos.db.get_make_by_type(type);
 
-                var res = this.env.pos.db.get_make_by_type(event.target.value)
-                _.each(res, function (each) {
-                    console.log("each...");
-                    console.log(each);
-                    console.log("make id...");
-                    console.log(each.make_id);
-                    console.log("make id -> 1...");
-                    console.log(each.make_id[1]);
-                })
-
+                    _.each(res, function (each) {
+                        var option = document.createElement('option');
+                        var val = $(option).val(each.make_id[1]);
+                        var a = motorcycle_make.find('option');
+                        for (var i = 0; i < a.length; i++) {
+                            if ($(a[i]).val() == each.make_id[1]) {
+                                $(a[i]).remove()
+                            }
+                        }
+                        motorcycle_make.append(val);
+                    })
+                }
+                
+                // makes search
+                var motorcycle_model = $(document).find('#motorcycle_models');
+                
                 var make = $(document).find('#motorcycle_make').val();
-                console.log("make: " + make);
+                
+                if (make != '') {
+                    var res_makes = this.env.pos.db.get_model_by_make_and_type(make, type);
 
-                var res_make = this.env.pos.db.get_model_by_make_and_type(make, type)
-
-                _.each(res_make, function (each) {
-                    console.log("each +++");
-                    console.log(each)
-                    console.log("display name +++");
-                    console.log(each.display_name)
-                })
-
+                    _.each(res_makes, function (each) {
+                        var option = document.createElement('option');
+                        var val = $(option).val(each.display_name);
+                        var a = motorcycle_model.find('option');
+                        for (var i = 0; i < a.length; i++) {
+                            if ($(a[i]).val() == each.display_name) {
+                                $(a[i]).remove();
+                            }
+                        }
+                        motorcycle_model.append(val);
+                    })
+                }
+                
+                // model search
+                //var motorcycle_year = $(document).find('#motorcycle_years');
+                
                 var model = $(document).find('#motorcycle_model').val();
-                console.log("model: " + model);
-                var year = $(document).find('#motorcycle_year').val();
-                console.log("year: " + year);
-
-
+                
+                if (model != '') {
+                    var res_model = this.env.pos.db.get_motorcycle_by_model(model);
+                    this.motorcycle_results = res_model;
+                    /* if (res_model.length > 0) {
+                        _.each(res_model, function (each) {
+                            if (each.year_id[1] == each.end_year_id[1]) {
+                                var option = document.createElement('option');
+                                var val = $(option).val(each.year_id[1]);
+                                motorcycle_year.append(val);
+                            } else {
+                                for (var i = parseInt(each.year_id[1]); i <= parseInt(each.end_year_id[1]); i++) {
+                                    var option = document.createElement('option');
+                                    var val = $(option).val(i);
+                                    motorcycle_year.append(val);
+                                }
+                            }
+                        })
+                    } */
+                }
+                
+                //search year
+                var product_lst = [];
+                var Products = this.env.pos.db.product_by_id;
+                if (this.env.pos.config.enable_common_search && this.env.pos.config.enable_search) {
+                    _.each(Products, function (product) {
+                        if (product.sh_is_common_product) {
+                            product_lst.push(product.id);
+                        }
+                    })
+                }
+                if (this.motorcycle_results) {
+                    _.each(this.motorcycle_results, function (each) {
+                        if (each) {
+                            for (var i = 0; i < each.product_ids.length; i++) {
+                                if (!product_lst.includes(each.product_ids[i])) {
+                                    product_lst.push(each.product_ids[i]);
+                                }
+                            }
+                        }
+                    })
+                }
+                this.trigger('search-motorcycle', { product_ids: product_lst });
             }
         }
 

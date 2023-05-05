@@ -49,8 +49,10 @@ odoo.define('sh_pos_motorcycle.pos', function (require) {
             var all = this.motorcycle_model
             var results = []
             _.each(all, function (each) {
-                if (each.make_id[1] == make && each.type_id[1] == type) {
-                    results.push(each)
+                // remove force search by type
+                //if (each.make_id[1] == make && each.type_id[1] == type) {
+                if (each.make_id[1] == make) {
+                    results.push(each);
                 }
             })
             return results
@@ -61,7 +63,7 @@ odoo.define('sh_pos_motorcycle.pos', function (require) {
             var results = []
             _.each(all, function (each) {
                 if (each.mmodel_id && self.motorcycle_model_by_id[each.mmodel_id] && self.motorcycle_model_by_id[each.mmodel_id].display_name && self.motorcycle_model_by_id[each.mmodel_id].display_name == name) {
-                    results.push(each)
+                    results.push(each);
                 }
             })
             return results
