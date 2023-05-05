@@ -69,7 +69,7 @@ odoo.define('sh_pos_motorcycle.ProductsWidget', function (require) {
                             }
                         })
                         self.env.pos.db.produt_search_string[self.selectedCategoryId] = data
-                        if ($('#motorcycle_year').val()) {
+                        if (res.length > 0) {
                             return res
                         } else {
                             return this.env.pos.db.get_product_by_category(this.selectedCategoryId)
