@@ -21,11 +21,6 @@ odoo.define('sh_pos_motorcycle.ProductItem', function (require, factory) {
                 var motorcycle_id = Product.motorcycle_ids
                 var specification_line = Product.specification_lines
 
-                console.log("evento");
-                console.log(event);
-                console.log("product loaded");
-                console.log(Product);
-
                 var details = []
                 var specs = []
 
@@ -38,11 +33,16 @@ odoo.define('sh_pos_motorcycle.ProductItem', function (require, factory) {
                     var res = each_spec.id
                     specs.push(res)
                 })
+
+                var stock_loc = "no disponible"
+                if ('location_id' in Product) {
+                    stock_loc = Product.location_id;
+                }
+                
                 this.showPopup('ProductDetailsPopup', {
                     details: details,
-                    product: Product.name,
-                    pid: Product.id,
                     specs: specs,
+                    stock_loc: stock_loc,
                 })
 
             }
