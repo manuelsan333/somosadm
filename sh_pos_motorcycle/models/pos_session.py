@@ -12,6 +12,7 @@ class PosSessionInherit(models.Model):
             if result.get('search_params') and result.get('search_params').get('fields'):
                 result.get('search_params').get('fields').append('sh_is_common_product')
                 result.get('search_params').get('fields').append('motorcycle_ids')
+                result.get('search_params').get('fields').append('location_id')
         return result
 
     def _pos_ui_models_to_load(self):
@@ -31,6 +32,9 @@ class PosSessionInherit(models.Model):
 
         if 'motorcycle.year' not in result:
             result.append('motorcycle.year')
+
+        if 'stock.location' not in result:
+            result.append('stock.location')
        
         return result
 
@@ -63,3 +67,9 @@ class PosSessionInherit(models.Model):
 
     def _get_pos_ui_motorcycle_year(self, params):
         return self.env['motorcycle.year'].search_read(**params['search_params'])
+
+    def _loader_params_stock_location(self):
+        return {'search_params': {'domain': [], 'fields': [], 'load': False}}
+
+    def _get_pos_ui_stock_location(self, params):
+        return self.env['stock.location'].search_read(**params['search_params'])

@@ -5,35 +5,25 @@
         <div role="dialog" class="modal-dialog sh_pos_product_details">
             <div class="popup popup-alert">
                 <header class="title">
-                    Detalles <t t-esc='props.product'/>
+                    Detalles
                 </header>
                 <main class="body">
                     <div class="tab-content" id="details-content">
-                        <div class="tab-pane fade show active" id="content-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
-                            <t t-foreach='props.details' t-as='detail' t-key="detail.id">
-                                <table class='product_details_tbl' >
-                                    <thead>
-                                        <th class="sh_make_th">Especificación</th>
-                                        <th class="sh_model_th">Valor</th>
-                                    </thead>
-                                    <tbody>
-                                        <!-- specification_lines -->
-                                        <t t-foreach='props.details' t-as='detail' t-key="detail.id">
-                                            <tr>
-                                                <td>
-                                                    especificación
-                                                </td>
-                                                <td>
-                                                    valor
-                                                </td>
-                                            </tr>
-                                        </t>
-                                    </tbody>
-                                </table>
-                            </t>
-                        </div>
-                        <br></br>
                         <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                            <table class='product_details_tbl'>
+                                <thead>
+                                    <td class="sh_make_th">Ubicaciones</td>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach='props.stock_loc' t-as='location' t-key="location">
+                                        <tr>
+                                            <td>
+                                                <t t-esc='location'/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
                             <table class='product_details_tbl' >
                                 <thead>
                                     <th class="sh_make_th">Marca</th>
