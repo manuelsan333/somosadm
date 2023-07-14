@@ -34,10 +34,12 @@ odoo.define('sh_pos_motorcycle.ProductItem', function (require, factory) {
                     specs.push(res)
                 })
 
-                var stock_loc = "no disponible"
-                if ('location_id' in Product) {
-                    stock_loc = Product.location_id;
+                // product location
+                var stock_loc = []
+                if (Product.id in self.env.pos.db.stockLocationsById) {
+                    stock_loc = self.env.pos.db.stockLocationsById[Product.id];
                 }
+                console.log(Product);
                 
                 this.showPopup('ProductDetailsPopup', {
                     details: details,

@@ -43,7 +43,7 @@ odoo.define("sh_pos_order_warehouse.models", function (require) {
             if(MotorcycleYear){
                 _.each(MotorcycleYear, function (motorcycle_year) {  
                     self.db.motorcycle_year.push(motorcycle_year)
-                    self.db.motorcycle_year_by_id[motorcycle_year.id] = motorcycle_year
+                    self.db.motorcycle_year_by_id[motorcycle_year.id] = motorcycle_year        
                 })
             }
 
@@ -53,6 +53,28 @@ odoo.define("sh_pos_order_warehouse.models", function (require) {
                 _.each(productSpecs, function (spec) {  
                     console.log(spec.name + ": " + spec.value);
                 })
+            }
+
+            var locationStocks = loadedData['stock.location'] || [];
+            if (locationStocks) {
+                console.log('locations loaded');
+                _.each(locationStocks, function (location) {
+                    if (location.barcode) {
+                        if (location.quant_ids) {
+                            _.each(location.quant_ids, function (id) {
+                                if (id in self.db.stockLocationsById){
+                                    stock_locations = [location.display_name];
+                                    stock_locations.concat(self.db.stockLocationsById[id])
+                                    self.db.stockLocationsById[id] = stock_locations
+                                } else {
+                                    self.db.stockLocationsById[id] = [location.display_name];
+                                }
+                                self.db.stockLocations.push(location);
+                            });
+                        }                        
+                    }
+                });
+                console.log(self.db.stockLocationsById);
             }
         }
         
