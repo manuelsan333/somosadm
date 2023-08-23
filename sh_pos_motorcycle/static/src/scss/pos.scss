@@ -21,6 +21,7 @@
 .pos .sh_pos_product_details .title{padding: 15px;}
 .pos .sh_pos_product_details main.body{margin: 0px;max-height: 180px; min-height: 180px; overflow: auto;}
 .product-image-icon {position: absolute; bottom: 0px; font-size: 20px; right: 0px; line-height: 13px; border-radius: 2px; z-index: 1000; padding: 3px;}
+.product-location-icon {position: absolute; font-size: 20px; right: 0px; line-height: 13px; border-radius: 2px; z-index: 1000; padding: 3px;}
 .product-image-icon.sh_is_enlarge { right: 22px;}
 @media (min-width: 992px){
     .pos .pos-rightheader.sh_main_right_header .status-buttons-portal .status-buttons .oe_status:first-child{white-space: nowrap;width: 90px;overflow: hidden;text-overflow: ellipsis;}
