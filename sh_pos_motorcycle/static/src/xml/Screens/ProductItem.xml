@@ -13,5 +13,10 @@
                 </div>
             </t>
         </xpath>
+        <xpath expr='//div[hasclass("product-content")]' position='after'>
+            <div class="product-location-icon">
+                <i t-on-click="() => this.trigger('click_on_stock', props.product)" class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+        </xpath>
     </t>
 </templates>

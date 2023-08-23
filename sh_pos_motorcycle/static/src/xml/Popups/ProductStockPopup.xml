@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+    <t t-name="ProductStockPopup" owl="1">
+        <div role="dialog" class="modal-dialog sh_pos_product_details">
+            <div class="popup popup-alert">
+                <header class="title">
+                    Existencias
+                </header>
+                <main class="body">
+                    <div class="tab-content" id="details-content">
+                        <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                            <table class='product_details_tbl'>
+                                <thead>
+                                    <th class="sh_make_th">Ubicación</th>
+                                    <th class="sh_model_th">Cantidad</th>
+                                    <th class="sh_start_th">Disponible</th>
+                                    <th class="sh_end_th">Reservado</th>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach='props.stock_loc' t-as='stock' t-key="stock.location">
+                                        <tr>
+                                            <td>
+                                                <t t-esc='stock.location'/>
+                                            </td>
+                                            <td>
+                                                <t t-esc='stock.quantity'/>
+                                            </td>
+                                            <td>
+                                                <t t-esc='stock.available'/>
+                                            </td>
+                                            <td>
+                                                <t t-esc='stock.reserved'/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="button cancel highlight" t-on-click="cancel">
+                        Ok
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </t>
+</templates>

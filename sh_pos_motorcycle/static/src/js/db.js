@@ -19,6 +19,7 @@ odoo.define('sh_pos_motorcycle.pos', function (require) {
             this.specs = [];
             this.stockLocationsById = {};
             this.stockLocations = [];
+            this.availableStock = {};
         },
         get_motorcycle_type: function () {
             return this.motorcycle_type

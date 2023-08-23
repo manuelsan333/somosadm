@@ -35,6 +35,9 @@ class PosSessionInherit(models.Model):
 
         if 'stock.location' not in result:
             result.append('stock.location')
+
+        if 'stock.quant' not in result:
+            result.append('stock.quant')
        
         return result
 
@@ -73,3 +76,10 @@ class PosSessionInherit(models.Model):
 
     def _get_pos_ui_stock_location(self, params):
         return self.env['stock.location'].search_read(**params['search_params'])
+    
+    # get stock quants to get locations and qty available
+    def _loader_params_stock_quant(self):
+        return {'search_params': {'domain': [], 'fields': [], 'load': False}}
+
+    def _get_pos_ui_stock_quant(self, params):
+        return self.env['stock.quant'].search_read(**params['search_params'])
