@@ -12,10 +12,10 @@
                         <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
                             <table class='product_details_tbl'>
                                 <thead>
-                                    <th class="sh_make_th">Location</th>
-                                    <th class="sh_model_th">Quantity</th>
-                                    <th class="sh_start_th">Available</th>
-                                    <th class="sh_end_th">Reserved</th>
+                                    <th class="sh_make_th">Ubicación</th>
+                                    <th class="sh_model_th">Cantidad</th>
+                                    <th class="sh_start_th">Disponible</th>
+                                    <th class="sh_end_th">Reservado</th>
                                 </thead>
                                 <tbody>
                                     <t t-foreach='props.stock_loc' t-as='stock' t-key="stock.location">
