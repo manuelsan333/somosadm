@@ -53,8 +53,13 @@ odoo.define('sh_pos_motorcycle.ProductItem', function (require, factory) {
             ClickOnStock(event) {
                 var self = this
                 const Product = event.detail
+
+                var product_stock = [];
+                if (self.env.pos.db.availableStock.hasOwnProperty(Product.id)) {
+                    product_stock = self.env.pos.db.availableStock[Product.id];
+                }
                 this.showPopup('ProductStockPopup', {
-                    stock_loc: []
+                    stock_loc: product_stock
                 })
             }
         }

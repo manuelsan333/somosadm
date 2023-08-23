@@ -48,33 +48,40 @@ odoo.define("sh_pos_order_warehouse.models", function (require) {
             }
 
             var  productSpecs = loadedData['sh.product.specification'] || [];
-            if(productSpecs){
-                console.log("specs loaded");
-                _.each(productSpecs, function (spec) {  
-                    console.log(spec.name + ": " + spec.value);
-                })
-            }
+            if(productSpecs){}
 
             var locationStocks = loadedData['stock.location'] || [];
             if (locationStocks) {
-                console.log('locations loaded');
                 _.each(locationStocks, function (location) {
                     if (location.barcode) {
                         if (location.quant_ids) {
-                            _.each(location.quant_ids, function (id) {
-                                if (id in self.db.stockLocationsById){
-                                    stock_locations = [location.display_name];
-                                    stock_locations.concat(self.db.stockLocationsById[id])
-                                    self.db.stockLocationsById[id] = stock_locations
-                                } else {
-                                    self.db.stockLocationsById[id] = [location.display_name];
-                                }
-                                self.db.stockLocations.push(location);
-                            });
+                            self.db.stockLocationsById[location.id] = location.barcode;
                         }                        
                     }
                 });
-                console.log(self.db.stockLocationsById);
+            }
+
+            var availableStock = loadedData['stock.quant'] || [];
+            if (availableStock) {
+                _.each(availableStock, function (stock) {
+                    if (self.db.stockLocationsById.hasOwnProperty(stock.location_id)) {
+                        if (self.db.availableStock.hasOwnProperty(stock.product_id)){
+                            self.db.availableStock[stock.product_id].push({
+                                "location": self.db.stockLocationsById[stock.location_id],
+                                "quantity": stock.quantity,
+                                "available": stock.available_quantity,
+                                "reserved": stock.reserved_quantity
+                            });
+                        } else {
+                            self.db.availableStock[stock.product_id] = [{
+                                "location": self.db.stockLocationsById[stock.location_id],
+                                "quantity": stock.quantity,
+                                "available": stock.available_quantity,
+                                "reserved": stock.reserved_quantity
+                            }];
+                        }
+                    }
+                });
             }
         }
         
