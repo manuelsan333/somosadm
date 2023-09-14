@@ -45,37 +45,6 @@ odoo.define('sh_pos_motorcycle.ProductsWidget', function (require) {
                 var self = this
                 var list = []
                 if (this.env.pos.config.enable_search) {
-                    var products = super.productsToDisplay
-
-                    /** Validate if exists vahicles filter variable **/
-                    if (this.autopart_ids){
-                        
-                        /** Validate if has selecction **/
-                        if (this.autopart_ids.length == 0) {
-                            return super.productsToDisplay
-                        }
-
-                        /** Filter products that has a relation with the vehicle selected **/
-                        var vehicles = this.autopart_ids
-                        _.each(products, function(product) {
-                            if (vehicles.includes(product.id)) {
-                                res.push(product)
-                            }
-                        })
-                        return res
-                    } else {
-
-                        /** If no vehicle was selected, return all products **/
-                        return super.productsToDisplay
-                    }
-
-                    /**
-                        The following code is the original that comes with the module
-                        was disable to accomplish the client requirements.
-                        To perform a roll back remove comments and restore the below
-                        code.
-                    **/
-                    /**
                     if (this.searchWord !== '') {
                         if ($('#motorcycle_year').val()) {
                             return self.env.pos.db.search_product_in_motorcycle(self.selectedCategoryId, self.searchWord)
@@ -100,7 +69,7 @@ odoo.define('sh_pos_motorcycle.ProductsWidget', function (require) {
                             }
                         })
                         self.env.pos.db.produt_search_string[self.selectedCategoryId] = data
-                        if (res.length > 0) {
+                        if ($('#motorcycle_year').val()) {
                             return res
                         } else {
                             return this.env.pos.db.get_product_by_category(this.selectedCategoryId)
@@ -110,7 +79,6 @@ odoo.define('sh_pos_motorcycle.ProductsWidget', function (require) {
                         list = this.env.pos.db.get_product_by_category(this.selectedCategoryId);
                         return list.sort(function (a, b) { return a.display_name.localeCompare(b.display_name) });
                     }
-                    **/
                 } else {
                     return super.productsToDisplay
                 }
