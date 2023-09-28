@@ -1,0 +1,120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_pos_motorcycle
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-16 06:15+0000\n"
+"PO-Revision-Date: 2021-09-16 06:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_pos_motorcycle
+#: model_terms:ir.ui.view,arch_db:sh_pos_motorcycle.sh_pos_motorcycle
+msgid "Auto Parts Settings"
+msgstr "汽车零件设置"
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/pos.xml:0
+#, python-format
+msgid "Common"
+msgstr "常见的"
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/product_details_popup.xml:0
+#, python-format
+msgid "Details"
+msgstr "细节"
+
+#. module: sh_pos_motorcycle
+#: model:ir.model.fields,field_description:sh_pos_motorcycle.field_pos_config__enable_common_search
+msgid "Display Common Product in Search"
+msgstr "在搜索中显示常见产品"
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/product_details_popup.xml:0
+#, python-format
+msgid "ENd Year"
+msgstr "年终"
+
+#. module: sh_pos_motorcycle
+#: model:ir.model.fields,field_description:sh_pos_motorcycle.field_pos_config__enable_search
+msgid "Enable Search"
+msgstr "启用搜索"
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/product_details_popup.xml:0
+#, python-format
+msgid "Make"
+msgstr "制作"
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/product_details_popup.xml:0
+#, python-format
+msgid "Model"
+msgstr "模型"
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/product_details_popup.xml:0
+#, python-format
+msgid "Ok"
+msgstr "好的"
+
+#. module: sh_pos_motorcycle
+#: model:ir.model,name:sh_pos_motorcycle.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "销售点配置"
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/pos.xml:0
+#, python-format
+msgid "Search Make..."
+msgstr "搜索制作..."
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/pos.xml:0
+#, python-format
+msgid "Search Products..."
+msgstr "搜索产品..."
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/pos.xml:0
+#, python-format
+msgid "Search Type..."
+msgstr "搜索类型..."
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/pos.xml:0
+#, python-format
+msgid "Search model..."
+msgstr "搜索模型..."
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/pos.xml:0
+#, python-format
+msgid "Search year..."
+msgstr "搜索年份..."
+
+#. module: sh_pos_motorcycle
+#. openerp-web
+#: code:addons/sh_pos_motorcycle/static/src/xml/product_details_popup.xml:0
+#, python-format
+msgid "Start Year"
+msgstr "开始年份"

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+    <t t-name="ProductDetailsPopup" owl="1">
+        <div role="dialog" class="modal-dialog sh_pos_product_details">
+            <div class="popup popup-alert">
+                <header class="title">
+                    Detalles
+                </header>
+                <main class="body">
+                    <div class="tab-content" id="details-content">
+                        <div class="tab-pane fade" id="content-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                            <table class='product_details_tbl'>
+                                <thead>
+                                    <td class="sh_make_th">Ubicaciones</td>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach='props.stock_loc' t-as='location' t-key="location">
+                                        <tr>
+                                            <td>
+                                                <t t-esc='location'/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                            <table class='product_details_tbl' >
+                                <thead>
+                                    <th class="sh_make_th">Marca</th>
+                                    <th class="sh_model_th">Modelo</th>
+                                    <th class="sh_start_th">Año inicial</th>
+                                    <th class="sh_end_th">Año final</th>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach='props.details' t-as='detail' t-key="detail.id">
+                                        <tr>
+                                            <td>
+                                                <t t-if="detail.make_id and env.pos.db.motorcycle_make_by_id and env.pos.db.motorcycle_make_by_id[detail.make_id] and env.pos.db.motorcycle_make_by_id[detail.make_id].display_name">
+                                                    <t t-esc='env.pos.db.motorcycle_make_by_id[detail.make_id].display_name' />
+                                                </t>
+                                            </td>
+                                            <td>
+                                                <t t-if="detail.make_id and env.pos.db.motorcycle_model_by_id and env.pos.db.motorcycle_model_by_id[detail.mmodel_id] and env.pos.db.motorcycle_model_by_id[detail.mmodel_id].display_name">
+                                                    <t t-esc='env.pos.db.motorcycle_model_by_id[detail.mmodel_id].display_name' />
+                                                </t>
+                                            </td>
+                                            <td>
+                                                <t t-if="detail.make_id and env.pos.db.motorcycle_year_by_id and env.pos.db.motorcycle_year_by_id[detail.year_id] and env.pos.db.motorcycle_year_by_id[detail.year_id].display_name">
+                                                    <t t-esc='env.pos.db.motorcycle_year_by_id[detail.year_id].display_name' />
+                                                </t>
+                                            </td>
+                                            <td>
+                                                <t t-if="detail.make_id and env.pos.db.motorcycle_year_by_id and env.pos.db.motorcycle_year_by_id[detail.end_year_id] and env.pos.db.motorcycle_year_by_id[detail.end_year_id].display_name">
+                                                    <t t-esc='env.pos.db.motorcycle_year_by_id[detail.end_year_id].display_name' />
+                                                </t>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Tabs content -->
+                    <!-- end tabs -->
+                </main>
+                <footer class="footer">
+                    <div class="button cancel highlight" t-on-click="cancel">
+                        Ok
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id='template' xml:space="preserve">
+    
+    <t t-name='ProductsWidget' t-inherit="point_of_sale.ProductsWidget" t-inherit-mode="extension" owl='1'>
+        <xpath expr='//div[hasclass("product-list-container")]' position="attributes">
+            <attribute name="t-attf-class">{{ env.pos.config.enable_search  ? 'sh_product_list_container' : '' }}</attribute>
+        </xpath>
+    </t>
+</templates>
