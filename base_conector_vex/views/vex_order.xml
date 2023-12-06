@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="pedidos_herencia_vex" model="ir.ui.view">
+           <field name="name">Pedidos.Form</field>
+           <field name="model">sale.order</field>
+           <field name="inherit_id" ref="sale.view_order_form" />
+           <field name="arch" type="xml">
+               <xpath expr="//page[@name='other_information']" position="after">
+                   <page string="Api Vex Information" name="woo_information">
+                       <group>
+                           <field name="conector"  readonly="1" />
+                           <field name="server_vex"  readonly="1" />
+                           <field name="server_vex"  readonly="1" />
+                           <field name="id_vex"  readonly="1" />
+                           <field name="shipping_vex"  readonly="1" />
+                           <field name="fee_vex"  readonly="1" />
+                           <field name="primary_order_id"  readonly="1" />
+                           <field name="date_vex_order"  readonly="1" />
+                       </group>
+                   </page>
+               </xpath>
+
+               <!--
+
+               <xpath expr="//header[1]" position="before">
+                    <button  class="btn-primary"
+                           type="object"  name="cancel_vex" string="Cancel in Connector"  attrs="{'invisible': [('server_vex', '=', False)]}" />
+               </xpath>
+               -->
+
+
+           </field>
+    </record>
+</odoo>
+

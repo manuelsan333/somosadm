@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+       <record model="ir.ui.view" id="vex_instance_form_view">
+            <field name="name">vex.web.services.form</field>
+            <field name="model">vex.web.services</field>
+            <field name="arch" type="xml">
+                <form string="Meli Server Form">
+                    <sheet>
+                    	<div class="oe_button_box" name="button_box">
+                            <button name="generate_key" type="object"
+                                    confirm="Are you secure generate key?"
+                                    class="oe_stat_button" icon="fa-spinner">
+                                Generate key
+                            </button>
+                        </div>
+                        <group>
+                             <field name="name" />
+                             <field name="method" />
+                             <field name="token_related" />
+                        </group>
+
+                        <notebook>
+                            <page string="Resources" name ="state_orders">
+                                <field name="lines_resources">
+                                    <tree editable="bottom">
+                                        <field name="model_id" />
+                                        <field name="is_read" />
+                                        <field name="is_write" />
+                                        <field name="is_create" />
+                                        <field name="is_unlink" />
+                                    </tree>
+                                 </field>
+                            </page>
+
+
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+       </record>
+
+
+        <record model="ir.actions.act_window" id="action_webservices">
+            <field name="name">WebServices</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vex.web.services</field>
+            <!--field name="view_type">form</field-->
+            <field name="view_mode">tree,form</field>
+            <!--<field name="search_view_id" ref="meli_questions_search_view"/>-->
+        </record>
+
+
+        <menuitem id="menu_webservices_vex" name="Web Services Odoo" parent="base.menu_custom" />
+
+        <menuitem id="menu_webservices_account"
+            action="action_webservices"
+            parent="menu_webservices_vex"
+            name="Web Service Account" />
+
+
+</odoo>

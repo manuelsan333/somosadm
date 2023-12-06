@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Inicio Herencia Clientes -->
+
+    <record id="vex_atributos" model="ir.ui.view">
+           <field name="name">Atributos.view</field>
+           <field name="model">product.attribute</field>
+           <field name="inherit_id" ref="product.attribute_tree_view"/>
+           <field name="arch" type="xml">
+              <xpath expr="//field[@name='create_variant']" position="after">
+                   <field name="server_vex"  optional="show" />
+                   <field name="id_vex"  optional="show" />
+                   <field name="conector"  optional="show" />
+              </xpath>
+           </field>
+    </record>
+
+</odoo>

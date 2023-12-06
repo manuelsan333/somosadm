@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="producto_vex_tree_herencias" model="ir.ui.view" >
+           <field name="name">Product.view</field>
+           <field name="model">product.template</field>
+           <field name="inherit_id" ref="product.product_template_tree_view"/>
+           <field name="arch" type="xml">
+
+              <xpath expr="//field[@name='name']" position="after">
+                   <field name="conector" optional="hidden" />
+                   <field name="server_vex"  optional="hidden" />
+                   <field name="id_vex"  optional="hidden" />
+
+              </xpath>
+           </field>
+    </record>
+
+    <record id="Producto_vex_kanvan_herencia" model="ir.ui.view">
+        <field name="name">Product.Kanvan.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_kanban_details']" position="after">
+                <div t-if="record.server_vex.value">
+                    <i class="fa fa-fw fa-spinner"></i>
+                    <field name="server_vex"  />
+                 </div>
+            </xpath>
+        </field>
+    </record>
+
+   <record id="base_herencia_product_template" model="ir.ui.view">
+           <field name="name">Product.Form</field>
+           <field name="model">product.template</field>
+           <field name="inherit_id" ref="product.product_template_only_form_view"/>
+           <field name="arch" type="xml">
+
+           	   <xpath expr="//page[@name='inventory']" position="after">
+                   <page name="Information_ML" string="Connector Vex Information" >
+                       <group>
+                           <field name="conector"  readonly="1"  />
+                           <field name="edit_id"   />
+                           <field name="id_vex"  attrs="{'readonly': [('edit_id', '!=', True)]}" />
+                           <field name="permalink" readonly="1"  widget="url"/>
+                           <field name="img_url_vex"  invisible="1" />
+                           <field name="product_template_image_ids"
+                                  class="o_website_sale_image_list"
+                                  context="{'default_name': name}"
+                                  mode="kanban" options="{'create_text':'Add a Media'}" nolabel="1" readonly="1"/>
+                           <field name="send_stock"   />
+                           <field name="warehouse_stock_vex"   />
+
+                       </group>
+                   </page>
+	           </xpath>
+
+           </field>
+    </record>
+
+
+    <!--
+
+    <record id="multi_update_stock" model="ir.actions.server">
+			<field name="name">Actualizar Stock</field>
+			<field name="model_id" ref="base_conector_vex.model_product_template"/>
+			<field name="binding_model_id" ref="base_conector_vex.model_product_template"/>
+			<field name="state">code</field>
+			<field name="code">action = records.update_conector_vex()</field>
+    </record>
+
+    -->
+
+
+
+
+
+
+
+
+</odoo>

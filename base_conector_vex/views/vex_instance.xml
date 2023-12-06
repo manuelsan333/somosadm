@@ -1,0 +1,167 @@
+<odoo>
+    <record id="view_base_vex_server_tree" model="ir.ui.view">
+        <field name="name">vex.instance.tree</field>
+        <field name="model">vex.instance</field>
+        <field name="arch" type="xml">
+            <tree string="Vex Instance">
+                <field name="name"/>
+
+                <field name="conector"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vex_instance_form_view">
+            <field name="name">vex.instance.form</field>
+            <field name="model">vex.instance</field>
+            <field name="arch" type="xml">
+                <form string="Server Form">
+                    <header></header>
+                    <sheet>
+
+
+                    	<div class="oe_button_box"  name="button_box" >
+                            <button name="fun_test" type="object" class="oe_stat_button" icon="fa-spinner">
+                                Test Connection
+                            </button>
+                            <button name="get_crons" type="object"
+                               class="oe_stat_button" icon="fa-spinner">
+                                CRONS
+                            </button>
+                        </div>
+                        <group name="group1">
+                             <group>
+                                  <field name="name" />
+                                  <field name="include_name_init_descripton"/>
+                                  <field name="conector" invisible="1"/>
+                                 <field name="last_number_import" invisible="0"/>
+
+                             </group>
+
+                        </group>
+                        <div>
+                            <b>Descripcion:</b> <br />
+                            <field name="description_company" />
+                        </div>
+                        <group>
+                            <field name="logs_general" />
+                        </group>
+
+
+                        <notebook>
+                            <page string="Basic Configuration" name ="basic_conf">
+                                <div class="row">
+                                     <div class="col-6">
+                                         <group>
+                                               <field name="picking_policy"/>
+                                               <!--<field name="location_id"/> -->
+                                               <field name="journal_id"/>
+                                               <field name="company" />
+                                               <field name="warehouse"/>
+                                               <field name="type_stock_export"/>
+                                               <!--<field name="type_document"/> -->
+                                               <field name="payment_term"/>
+                                               <field name="use_date_specific"/>
+                                               <field name="latest_days_order" attrs="{'invisible': [('use_date_specific','=',True)]}" />
+                                               <field name="order_after" attrs="{'invisible': [('use_date_specific','!=',True)]}" />
+                                               <field name="order_after_days" invisible="1" />
+                                               <field name="discount_fee"/>
+                                               <field name="shipment"/>
+                                               <field name="all_orders" invisible="1" />
+                                               <field name="all_status_orders" invisible="1" />
+                                               <field name="url_license"/>
+                                               <field name="license_secret_key"/>
+                                               <field name="license_key"/>
+
+                                        </group>
+                                     </div>
+                                      <div class="col-6">
+                                          <group>
+
+
+                                              <field name="user_sale_id"/>
+                                              <field name="categ_id"/>
+                                              <field name="product_payment_add"/>
+                                              <field name="product_shipment"/>
+                                              <field name="medium_id"/>
+                                              <field name="active_automatic"/>
+                                              <field name="pricelist" />
+                                              <field name="sales_team" />
+                                              <field name="use_sequence_order" />
+                                              <field name="sequence_id" attrs="{'invisible': [('use_sequence_order','=',False)]}"  />
+                                              <field name="prefix_sequence" attrs="{'invisible': [('use_sequence_order','!=',False)]}"  />
+                                              <field name="search_sku" />
+                                              <field name="use_tax_product" />
+                                              <field name="tax_id" attrs="{'invisible': [('use_tax_product','!=',False)]}" />
+                                              <field name="export_stock_min" />
+                                              <field name="export_stock_all_products"/>
+                                              <field name="warehouse_stock_vex"/>
+                                              <field name="update_price" />
+                                              <field name="update_stock" />
+                                              <field name="update_title" />
+                                              <field name="update_description" />
+                                              <field name="share_multi_instances" />
+                                              <field name="search_archive_products" />
+                                              <field name="verify_albaranes" />
+                                              <field name="create_not_exists" />
+                                              <field name="sku_suppress" />
+                                              <field name="import_categories" />
+                                              <field name="id_external_aditional_order" />
+                                              <field name="location_excluded" widget="many2many_tags" />
+                                              <field name="import_adress_in_fields" />
+
+
+
+                                              <field name="print_data_with_error"
+                                                     groups="base_conector_vex.group_advanced_field_vex" />
+                                              <field name="print_shipping_with_error"
+                                                     groups="base_conector_vex.group_advanced_field_vex" />
+
+                                          </group>
+                                      </div>
+                                </div>
+                            </page>
+                            <page string="Orders State" name ="state_orders">
+                                <field name="state_orders">
+                                    <tree editable="bottom">
+                                        <field name="conector" />
+                                        <field name="state" domain="[('conector', '=', conector)]" />
+                                        <field name="odoo_state" />
+                                        <field name="created_invoice" />
+                                        <field name="confirm_invoice" />
+                                        <field name="confirm_albaran" />
+                                    </tree>
+                                 </field>
+                            </page>
+                            <page string="Products Reemplace" name ="products_reemplace">
+                                <field name="products_reemplace">
+                                    <tree editable="bottom">
+                                        <field name="conector" />
+                                        <field name="code" />
+                                        <field name="product_id" />
+                                    </tree>
+                                 </field>
+                            </page>
+                            <page string="Import Lines" name ="import_line">
+                                <button name="stop_sync" type="object"
+                                    class="oe_stat_button" icon="fa-spinner"
+                                    >
+                                        Stop Sync
+                                </button>
+                                <field name="import_lines">
+                                    <tree editable="bottom">
+                                        <field name="orden" />
+                                        <field name="url" />
+                                        <field name="instance" />
+                                        <field name="accion" />
+                                        <field name="state" />
+                                    </tree>
+                                 </field>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+    </record>
+</odoo>

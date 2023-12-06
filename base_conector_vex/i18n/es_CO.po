@@ -1,0 +1,1221 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_conector_vex
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-29 00:15+0000\n"
+"PO-Revision-Date: 2023-04-29 00:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_conector_vex
+#: model:ir.actions.server,name:base_conector_vex.vex_soluciones_ir_cron_automatico_ir_actions_server
+#: model:ir.cron,cron_name:base_conector_vex.vex_soluciones_ir_cron_automatico
+msgid " CRON AUTOMATICO DE AYUDA VEX "
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "<b>Descripcion:</b> <br/>"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__accion
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__accion
+msgid "Accion"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__active_automatic
+msgid "Activate automatic sync"
+msgstr "Activar sincronizacion automatica"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__active_cron
+msgid "Active Cron"
+msgstr "Activar Cron"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__active_cron_stock
+msgid "Active Cron Stock"
+msgstr "Activar Cron Inventario"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__active_list
+msgid "Active List"
+msgstr "Activar Lista"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__all_items
+msgid "All Items"
+msgstr "Todos los Items"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__all_orders
+msgid "All Orders"
+msgstr "Todas las Ordenes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__all_status_orders
+msgid "All the states"
+msgstr "Todos los estados"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__warehouse_stock_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__warehouse_stock_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__warehouse_stock_vex
+msgid "Almacen x Exportar"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.pedidos_herencia_vex
+msgid "Api Vex Information"
+msgstr "Información de API Vex"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__argument
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__argument
+msgid "Argument"
+msgstr "Argumento"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_product_attribute_value
+msgid "Attribute Value"
+msgstr "Valor del Atributo"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__automatic
+msgid "Automatic"
+msgstr "Automático"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_logs__type__automatic
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_synchro__type_log__automatic
+msgid "Automatico"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "Basic Configuration"
+msgstr "Configuración Básica"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.product_product_vex_herencia_form
+msgid "Borrar ID VEX"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__search_archive_products
+msgid "Buscar Productos Archivados"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "CRONS"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.view_vex_synchro
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__odoo_state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__discount_fee
+msgid "Comision"
+msgstr "Comisión"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__company
+msgid "Company"
+msgstr "Compañia"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__share_multi_instances
+msgid "Compartir Productos entre cuentas"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_account_tax__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_delivery_carrier__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_loyalty_card__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_attribute__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_attribute_value__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_image__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_public_category__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_partner__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_users__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_sale_order__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__conector
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__conector
+msgid "Conector"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__confirm_albaran
+msgid "Confirmar Albaran"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_image__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__id_vex
+msgid "Connector  ID"
+msgstr "Conector ID"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_account_tax__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_delivery_carrier__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_loyalty_card__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_attribute__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_sale_order__id_vex
+msgid "Connector ID"
+msgstr "Conector ID"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.base_herencia_product_template
+msgid "Connector Vex Information"
+msgstr "Información Conector Vex"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__created_invoice
+msgid "Created Invoice"
+msgstr "Factura Creada"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__created_shipment
+msgid "Created Shipment"
+msgstr "Envío Creado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__create_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__create_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__create_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__create_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__create_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__create_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__create_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__create_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__create_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__create_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__create_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__create_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__create_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__create_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__current_pag
+msgid "Current Pag"
+msgstr "Página Actual"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__page
+msgid "Current Page"
+msgstr "Página Actual"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type__days
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type_stock__days
+msgid "Days"
+msgstr "Días"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance__picking_policy__one
+msgid "Deliver all products at once"
+msgstr "Entregar todos los productos a la vez"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance__picking_policy__direct
+msgid "Deliver each product when available"
+msgstr "Entregar cada producto cuando esté disponible"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__description_company
+msgid "Descripcion Empresa"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__detail
+msgid "Detail"
+msgstr "Detalle"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__display_name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__display_name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__display_name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__display_name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__display_name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__display_name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__display_name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_logs__state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_image__dowloaded
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.search_images
+msgid "Dowloaded"
+msgstr "Descargado"
+
+#. module: base_conector_vex
+#: model:ir.actions.server,name:base_conector_vex.multi_dowloand_image2
+msgid "Dowloand Images"
+msgstr "Descargar Imágenes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__set_invoice_state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__edit_id
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__edit_id
+msgid "Edit"
+msgstr "Editar"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__end_date
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__send_stock
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__send_stock
+msgid "Enviar Stock"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__shipment
+msgid "Envio"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_logs__state__error
+msgid "Error"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__export
+msgid "Export"
+msgstr "Exportar"
+
+#. module: base_conector_vex
+#: model:ir.actions.server,name:base_conector_vex.multi_update_stock_pp
+msgid "Export Vex Connector"
+msgstr "Exportar Conector Vex"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.meli_restapi_list_form
+msgid "Exportar"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__export_stock_all_products
+msgid "Exportar  todos los productos"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_sale_order__fee_vex
+msgid "Fee"
+msgstr "Tarifa"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance__discount_fee__save
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance__shipment__save
+msgid "Guardar como Dato"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance__discount_fee__save_line
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance__shipment__save_line
+msgid "Guardar como Linea"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type__hours
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type_stock__hours
+msgid "Hours"
+msgstr "Horas"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__id
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__id
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__id
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__id
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__id
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__id
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__id
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__id
+msgid "ID"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__id_vex_varition
+msgid "ID Variation"
+msgstr "Id Variación"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_public_category__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__id_vex
+msgid "Id Connector"
+msgstr "Id Conector"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__img_url_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__img_url_vex
+msgid "Imagen Url"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.view_images_tree
+msgid "Images"
+msgstr "Imágenes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__import_by_parts
+msgid "Import By Parts"
+msgstr "Importar por partes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__import_images
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__import_images
+msgid "Import Images"
+msgstr "Importar Imágenes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__import_images_website
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__import_images_website
+msgid "Import Images Website"
+msgstr "Importar Imágenes del Sitio Web"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__import_lines
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "Import Lines"
+msgstr "Importar Lineas"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__import_stock
+msgid "Import Stock"
+msgstr "Importar Stock"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__import_unit
+msgid "Import Unit"
+msgstr "Importar Unidad"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__importv
+msgid "Importv"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__tax_id
+msgid "Impuesto"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__include_name_init_descripton
+msgid "Incluir Nombre del Producto al incio de la descripcion"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__instance
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__instance
+msgid "Instance"
+msgstr "Instancia"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_vex_instance
+msgid "Instance Vex"
+msgstr "Instancia Vex"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__interval
+msgid "Interval"
+msgstr "Intervalo"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__interval_stock
+msgid "Interval Stock"
+msgstr "Intervalo de Stock"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__interval_type
+msgid "Interval Type"
+msgstr "Tipo de Intervalo"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__interval_type_stock
+msgid "Interval Type Stock"
+msgstr "Tipo de Intervalo de Stock"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__per_page
+msgid "Items per page"
+msgstr "Items por página"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__journal_id
+msgid "Journal"
+msgstr "Diario"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex____last_update
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance____last_update
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders____last_update
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs____last_update
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list____last_update
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders____last_update
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro____last_update
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__write_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__write_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__write_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__write_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__write_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__write_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__write_uid
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__write_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__write_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__write_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__write_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__write_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__write_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__write_date
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__license_key
+msgid "License Key"
+msgstr "Clave de Licencia"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__license_secret_key
+msgid "License Secret Key"
+msgstr "Clave secreta de licencia"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__limit_action
+msgid "Limit Action"
+msgstr "Limitar Acción"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_vex_restapi_list
+msgid "List Vex RestApi"
+msgstr "Lista de Vex RestApi"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__odoo_state__done
+msgid "Locked"
+msgstr "Bloqueado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__log
+msgid "Log"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__log_meli_txt
+msgid "Log Meli Txt"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.meli_restapi_list_form
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.pedidos_TREE_logs
+msgid "Logs"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_loyalty_card
+msgid "Loyalty Coupon"
+msgstr "Cupón de fidelidad"
+
+#. module: base_conector_vex
+#: model:res.groups,name:base_conector_vex.group_advanced_field_vex
+msgid "MOSTRAR CAMPOS AVANZADOS CONECTOR VEX"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_logs__type__manual
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_synchro__type_log__manual
+msgid "Manual"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__max_items
+msgid "Maximum number of items to be returned approximately"
+msgstr "Máximo número de elementos que se devolverán aproximadamente"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__medium_id
+msgid "Medio"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_attribute_value__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_partner__id_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_users__id_vex
+msgid "Meli ID"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_partner__id_vex_parent
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_users__id_vex_parent
+msgid "Meli ID Parent"
+msgstr "Meli ID Padre"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.meli_restapi_list_form
+msgid "Meli Server Form"
+msgstr "Meliserver Form"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.popup_vex_form
+msgid "Mensaje"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type__minutes
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type_stock__minutes
+msgid "Minutes"
+msgstr "Minutos"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__model
+msgid "Model"
+msgstr "Modelo"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type__months
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type_stock__months
+msgid "Months"
+msgstr "Meses"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__name
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__next_date_cron
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__next_date_cron_stock
+msgid "Next Execution Date"
+msgstr "Próxima fecha de ejecución"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.search_images
+msgid "Not Dowloaded"
+msgstr "No descargadas"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.popup_vex_form
+msgid "OK"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__odoo_state
+msgid "Odoo State"
+msgstr "Estado Odoo"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_import_synchro_finish
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_import_synchro_finish_cron
+msgid "Ok"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__orden
+msgid "Orden"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_sale_order
+msgid "Ordenes de mercado libre"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__order_after
+msgid "Order After"
+msgstr "Ordenar después"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__order_after_days
+msgid "Order After Days"
+msgstr "Ordenar después de días"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "Orders State"
+msgstr "Ordenes de estado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__set_invoice_state__paid
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_public_category__parent_id_vex_tmp
+msgid "Parent Id Vex Tmp"
+msgstr "Id padre Vex Tmp"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__payment_term
+msgid "Payment Term"
+msgstr "Término de pago"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vexlines_import__state__wait
+msgid "Pendiente"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__permalink
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__permalink
+msgid "Permalink"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__picking_policy
+msgid "Picking Policy"
+msgstr "Política de picking"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_import_synchro_finish_cron
+msgid "Please wait for the import to finish, check logs"
+msgstr "Por favor espere a que termine la importación, revise los logs"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__set_invoice_state__posted
+msgid "Posted"
+msgstr "Asignado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__pricelist
+msgid "Pricelist"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_product_attribute
+msgid "Product Attribute"
+msgstr "Atributo de producto"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_product_image
+msgid "Product Image"
+msgstr "Imagen del producto"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_product_product
+msgid "Product Variant"
+msgstr "Variantes de producto"
+
+#. module: base_conector_vex
+#: model:product.template,name:base_conector_vex.demo_product_template_product_template
+msgid "Producto temporal conector"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.meli_restapi_list_kanban
+msgid "Products"
+msgstr "Productos"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__odoo_state__draft
+msgid "Quotation"
+msgstr "Presupuesto"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__odoo_state__send
+msgid "Quotation Send"
+msgstr "Presupuesto enviado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vexlines_import__state__done
+msgid "Realizado"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_popup_vex__message
+msgid "Resultado: "
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_instance_status_orders__odoo_state__sale
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__sales_team
+msgid "Sales Team"
+msgstr "Equipo de ventas"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__import_images_website__save
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_synchro__import_images_website__save
+msgid "Save url"
+msgstr "Guardar url"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__import_images_website__dowload
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_synchro__import_images_website__dowload
+msgid "Save url and Dowload"
+msgstr "Guardar url y descargar"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__search_sku
+msgid "Search Sku"
+msgstr "Buscar Sku"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__sequence_id
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "Server Form"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_account_tax__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_delivery_carrier__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_loyalty_card__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_attribute__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_attribute_value__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_image__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_public_category__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_template__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_partner__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_res_users__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_sale_order__server_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__server_vex
+msgid "Server Vex"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__set_invoice_state
+msgid "Set Invoice State"
+msgstr "Establecer estado de factura"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.meli_restapi_list_form
+msgid "Setting Advanced"
+msgstr "Configuración avanzada"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_sale_order__shipping_vex
+msgid "Shipping"
+msgstr "Envío"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de envío"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__state
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__state
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__state
+msgid "State"
+msgstr "Estado"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__state_orders
+msgid "State Orders"
+msgstr "Estado de órdenes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__stock
+msgid "Stock"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__stock_import
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__stock_import
+msgid "Stock Import"
+msgstr "Importar stock"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__location_id
+msgid "Stock Location"
+msgstr "Ubicación de stock"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__export_stock_min
+msgid "Stock Minimo a exportar"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__stock_vex
+msgid "Stock Vex"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "Stop Sync"
+msgstr "Detener sincronización"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.view_vex_synchro
+msgid "Sync Unit"
+msgstr "Sincronizar unidad"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_import_synchro_finish
+msgid "Synchronization Completed!"
+msgstr "Sincronización completada"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_import_synchro_finish
+msgid "Synchronization has finished successfully"
+msgstr "La sincronización ha finalizado exitosamente"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_import_synchro_finish_cron
+msgid "Synchronization not Completed!"
+msgstr "Sincronización con completada"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.view_vex_synchro
+msgid "Synchronize"
+msgstr "Sincronizar"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_vex_synchro
+msgid "Synchronized server Vex"
+msgstr "Server Vex sincronizado"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.vex_instance_form_view
+msgid "Test Connection"
+msgstr "Testear conexión"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_vex_restapi_list_unique_id_argument
+msgid "There can be no duplication of argument in conector"
+msgstr "No puede haber duplicación de argumentos en el conector."
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_delivery_carrier_unique_id_envios_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_loyalty_card_unique_id_cupones_vex
+msgid "There can be no duplication of synchronized Delivery"
+msgstr "No puede haber duplicación de envíos sincronizados"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_sale_order_unique_id_order_woo
+msgid "There can be no duplication of synchronized Orders"
+msgstr "No puede haber duplicación de órdenes sincronizadas"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_product_image_unique_id_img_vex
+msgid "There can be no duplication of synchronized Pictures "
+msgstr "No puede haber duplicación de imágenes sincronizadas"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_product_template_unique_id_prod_vex
+msgid "There can be no duplication of synchronized Products Template"
+msgstr "No puede haber duplicación de plantillas de productos sincronizados"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_account_tax_unique_id_impuestos_vex
+msgid "There can be no duplication of synchronized Taxes"
+msgstr "No puede haber duplicación de impuestos sincronizados"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_res_partner_unique_id_clie_vex
+msgid "There can be no duplication of synchronized clients"
+msgstr "No puede haber duplicación de clientes sincronizados"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_product_product_uni_id_variante_prro_vex
+msgid "There can be no duplication of synchronized products Variations"
+msgstr "No puede haber duplicación de variaciones de productos sincronizados"
+
+#. module: base_conector_vex
+#: model:ir.model.constraint,message:base_conector_vex.constraint_vex_instance_status_orders_unique_value
+#: model:ir.model.constraint,message:base_conector_vex.constraint_vex_status_orders_unique_value
+msgid "There can be no duplication of synchronized status"
+msgstr "No puede haber duplicación de estados sincronizados"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__type_document
+msgid "Tipo de Identificacion"
+msgstr "No puede haber duplicación de estados sincronizados"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__total_categories
+msgid "Total Categories"
+msgstr "Cantidad de categorías"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__total_count
+msgid "Total Count"
+msgstr "Cantidad total"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__total_customers
+msgid "Total Customers"
+msgstr "Cantidad de clientes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__total_orders
+msgid "Total Orders"
+msgstr "Cantidad de órdenes"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__total
+msgid "Total Page"
+msgstr "Cantidad de páginas"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__total_paginaciones
+msgid "Total Paginaciones"
+msgstr "Cantidad de paginaciones"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__total_products
+msgid "Total Products"
+msgstr "Cantidad de productos"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.meli_restapi_list_kanban
+msgid "Total Synchronized :"
+msgstr "Cantidad de sincronizados:"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.view_vex_synchro
+msgid "Transfer Data To Server"
+msgstr "Transferir datos al servidor"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_synchro__type_log
+msgid "Type Log"
+msgstr "Tipo de log"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_image__image_url_vex
+msgid "URL"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_restapi_list__last_number_import
+msgid "Ultima Cantidad Importada"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__latest_days_order
+msgid "Ultimos N dias"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__update_price
+msgid "Update Price"
+msgstr "Actualizar precio"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__update_stock
+msgid "Update Stock"
+msgstr "Actualizar stock"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__update_title
+msgid "Update Title"
+msgstr "Actualizar título"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vexlines_import__url
+msgid "Url"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__url_license
+msgid "Url License"
+msgstr "Licencia de URL"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__use_date_specific
+msgid "Usar Fecha Especifica"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__use_tax_product
+msgid "Usar el Impuesto del producto"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance_status_orders__value
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_status_orders__value
+msgid "Value"
+msgstr "Valor"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__user_sale_id
+msgid "Vendedor Ventas"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_sale_order__primary_order_id
+msgid "Venta Primaria"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_sale_order__secundary_order_ids
+msgid "Venta Secundaria"
+msgstr ""
+
+#. module: base_conector_vex
+#: model_terms:ir.ui.view,arch_db:base_conector_vex.view_base_vex_server_tree
+msgid "Vex Instance"
+msgstr "Instancia Vex"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__vex_list
+msgid "Vex List"
+msgstr "Lista Vex"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_product_product__vex_regular_price
+msgid "Vex Regular Price"
+msgstr "Precio normal vex"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__warehouse
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_logs__webhook
+msgid "Webhook"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_product_public_category
+msgid "Website Product Category"
+msgstr "Categoría del Producto"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type__weeks
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_restapi_list__interval_type_stock__weeks
+msgid "Weeks"
+msgstr "Semanas"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_popup_vex
+msgid "descripcion"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.actions.act_window,name:base_conector_vex.popup_vex_action
+msgid "message"
+msgstr "mensaje"
+
+#. module: base_conector_vex
+#: model:ir.model.fields,field_description:base_conector_vex.field_vex_instance__categ_id
+msgid "product category"
+msgstr "categoria de producto"
+
+#. module: base_conector_vex
+#: model:ir.model.fields.selection,name:base_conector_vex.selection__vex_logs__state__unit
+msgid "unit"
+msgstr "unidad"
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_vex_instance_status_orders
+msgid "vex.instance.status.orders"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_vex_logs
+msgid "vex.logs"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_vex_status_orders
+msgid "vex.status.orders"
+msgstr ""
+
+#. module: base_conector_vex
+#: model:ir.model,name:base_conector_vex.model_vexlines_import
+msgid "vexlines.import"
+msgstr ""

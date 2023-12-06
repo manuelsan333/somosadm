@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Inicio Herencia Categorias -->
+
+    <record id="categorias_meli_herencia2" model="ir.ui.view">
+           <field name="name">Categorias.tree</field>
+           <field name="model">product.public.category</field>
+           <field name="inherit_id" ref="website_sale.product_public_category_tree_view"/>
+           <field name="arch" type="xml">
+              <xpath expr="//field[@name='display_name']" position="after">
+
+                   <field name="id_vex"   readonly="1" />
+              </xpath>
+           </field>
+    </record>
+
+
+    <record id="categorias_meli_herencia" model="ir.ui.view">
+        <field name="name">categorias.herencia.Form</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+        <field name="arch" type="xml">
+               <xpath expr="//field[@name='sequence']" position="after">
+                    <field name="id_vex"   readonly="1" />
+               </xpath>
+        </field>
+
+    </record>
+
+
+</odoo>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record model="ir.ui.view" id="meli_restapi_list_kanban" >
+        <field name="name">MercadoLibre List Sync Kanban</field>
+        <field name="model">vex.restapi.list</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="argument"/>
+                <field name="automatic"/>
+                <field name="total_count"  />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click_edit oe_semantic_html_override oe_kanban_card ">
+                            <div t-attf-class="oe_kanban_content">
+                                <t t-if="record.argument.raw_value == 'products'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/shopping-bags.png'"
+                                        class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+
+                                <t t-if="record.argument.raw_value == 'categories'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/categories.png'"
+                                        class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+
+                                <t t-if="record.argument.raw_value == 'products/categories'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/categories.png'"
+                                        class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+
+                                <t t-if="record.argument.raw_value == 'customers'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/customers.png'"
+                                        class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+
+                                <t t-if="record.argument.raw_value == 'orders'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/shopping-cart.png'"
+                                         class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+
+                                <t t-if="record.argument.raw_value == 'questions'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/questions.png'"
+                                         class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+
+                                <t t-if="record.argument.raw_value == 'attributes'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/attributes.png'"
+                                         class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+                                <t t-if="record.argument.raw_value == 'products/attributes'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/attributes.png'"
+                                         class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+                                <t t-if="record.argument.raw_value == 'images'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/images.png'"
+                                         class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+                                <t t-if="record.argument.raw_value == 'fee'">
+                                    <img alt="Products" t-att-src="'/base_conector_vex/static/img/fee.jpg'"
+                                         class="o_kanban_image oe_kanban_avatar_smallbox" />
+                                </t>
+
+                            </div>
+                            <strong><field name="name"/></strong>
+                            <br />
+                            <strong>Total Synchronized :     <field name="total_count"  /></strong>
+                            <i class="fa fa-history" attrs="{'invisible': [('automatic', '!=', True)]}"></i>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+
+    <record model="ir.ui.view" id="meli_restapi_list_form" >
+        <field name="name">vex.restapi.list</field>
+        <field name="model">vex.restapi.list</field>
+        <field name="arch" type="xml">
+            <form string="Meli Server Form">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+
+                        <button class="oe_stat_button" type="object"
+                            name="go_export_product" icon="fa-cloud" string="Exportar"
+                            attrs="{'invisible': [('argument', '!=', 'products')]}"
+
+                        />
+
+                        <button class="oe_stat_button" type="object"
+                            name="go_action_list" icon="fa-cloud"
+
+                        >
+                            <div class="o_stat_info">
+                                <field name="total_count" class="o_stat_value"/>
+                                <span class="o_stat_text"> <field name="argument"  readonly="1"/> </span>
+                            </div>
+                        </button>
+
+
+
+                    </div>
+
+                    <notebook colspan="4" >
+
+                        <page string="Logs">
+                            <field name="automatic" invisible="1" />
+                            <field name="argument"  invisible="1" />
+                            <field name="log"  domain="[('vex_list.argument','=',argument)]" />
+                        </page>
+
+
+                        <page string="Setting Advanced">
+                            <group>
+                                <field name="stock_import" attrs="{'invisible': [('argument', '!=', 'products')]}" />
+                                <field name="import_images"  attrs="{'invisible': [('argument', '!=', 'products')]}" />
+                                <field name="import_images_website" attrs="{'invisible': [('argument', '!=', 'products')]}" />
+                                <field name="per_page"  />
+                                <field name="limit_action"  />
+                                <field name="last_number_import"  />
+                            </group>
+                        </page>
+
+
+                    </notebook>
+
+                </sheet>
+
+
+            </form>
+        </field>
+    </record>
+
+
+
+</odoo>

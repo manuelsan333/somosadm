@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="popup_vex_form" model="ir.ui.view">
+		<field name="name">popup.vex.form</field>
+		<field name="model">popup.vex</field>
+		<field name="arch" type="xml">
+			<form string="Mensaje">
+				<field name="message" readonly="1" decoration-bf="True"/>
+				<footer>
+					<button string="OK" class="oe_highlight" special="cancel" />
+				</footer>
+			</form>
+		</field>
+	</record>
+
+    <record model="ir.actions.act_window" id="popup_vex_action">
+		<field name="name">message</field>
+		<field name="res_model">popup.vex</field>
+		<field name="view_mode">form</field>
+		<field name="view_id" ref="popup_vex_form" />
+		<field name="target">new</field>
+	</record>
+
+
+
+
+    <record id="view_vex_synchro" model="ir.ui.view">
+        <field name="name">Import / Update</field>
+        <field name="model">vex.synchro</field>
+        <field name="priority">2</field>
+        <field name="arch" type="xml">
+            <form string="Transfer Data To Server">
+                <group>
+                    <group>
+                         <field name="conector" invisible="1"/>
+                         <field name="server_vex"  domain = "[('conector','=',conector)]"/>
+                         <field name="accion"  domain = "[('importv','=',True),('conector','=',conector)]" />
+                         <field name="total_paginaciones" invisible="1"/>
+                         <field name="argument" invisible="1"/>
+                         <field name="import_unit" />
+                         <field name="id_vex" attrs="{'invisible': [('import_unit', '=', False)]}" />
+                    </group>
+                    <group>
+                        <field name="stock_import"  attrs="{'invisible': [('argument', '!=',  'products')]}" />
+                        <field name="import_images"  attrs="{'invisible': [('argument', '!=', 'products')]}" />
+                        <field name="import_images_website"  attrs="{'invisible': [('argument', '!=', 'products')]}" />
+                        <!--
+                        <div>
+                         <field name="current_pag"  widget="gauge"
+                           attrs="{'invisible': [('server_vex', '=', False)]}"
+                            options="{'max_field': 'total_paginaciones',
+                            'label_field': 'current', 'style': 'width:160px; height: 120px;'}"/>
+                         </div>
+                       -->
+                    </group>
+
+                </group>
+                <footer>
+                    <button name="start_import" string="Synchronize"
+                            attrs="{'invisible': [('import_unit', '!=', False)]}"
+                            type="object" class="oe_highlight" id="click_here0"/>
+
+                    <button name="synchro_unit_wizard" string="Sync Unit"
+                            attrs="{'invisible': [('import_unit', '=', False)]}"
+                            type="object" class="oe_highlight" />
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!--
+
+    <record id="action_view_meli_synchro" model="ir.actions.act_window">
+        <field name="name">Import</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">vex.synchro</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_vex_synchro"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem parent="meli_config_main" name="Import / Update"
+              action="action_view_meli_synchro" id="menu_action_view_meli_synchro" />
+    -->
+
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="vex_import_synchro_finish" model="ir.ui.view">
+        <field name="name">Import Finish Synchronization</field>
+        <field name="model">vex.synchro</field>
+        <field name="arch" type="xml">
+            <form string="Synchronization Completed!">
+                <separator string="Synchronization has finished successfully"/>
+                <footer>
+                    <button string="Ok" class="oe_highlight" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="vex_import_synchro_finish_cron" model="ir.ui.view">
+        <field name="name">Please wait for the import to finish</field>
+        <field name="model">vex.synchro</field>
+        <field name="arch" type="xml">
+            <form string="Synchronization not Completed!">
+                <separator string="Please wait for the import to finish, check logs"/>
+                <footer>
+                    <button string="Ok" class="oe_highlight" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

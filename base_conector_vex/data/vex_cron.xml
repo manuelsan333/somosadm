@@ -1,0 +1,14 @@
+<odoo>
+    <record id="vex_soluciones_ir_cron_automatico" model="ir.cron">
+        <field name="name"> CRON AUTOMATICO DE AYUDA VEX </field>
+        <field name="model_id" ref="model_vex_synchro"/>
+        <field name="state">code</field>
+        <field name="code">model.start_sync_automatic()</field>
+        <field name="interval_number">2</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field eval="False" name="doall"/>
+        <field name="active">False</field>
+        <!--<field name="argument">vex_cron</field> -->
+    </record>
+</odoo>

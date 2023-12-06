@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_vex_synchro" model="ir.ui.view">
+        <field name="name">Token</field>
+        <field name="model">vex.wizard.popup</field>
+        <field name="priority">2</field>
+        <field name="arch" type="xml">
+            <form string="Transfer Data To Server">
+                <div>
+                    <field name="msg" readonly="1" />
+                </div>
+                <footer>
+
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

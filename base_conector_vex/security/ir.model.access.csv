@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+server_restapi_list,server_restapi_list,model_vex_restapi_list,,1,1,0,0
+logs,logs,model_vex_logs,,1,1,1,1
+access_instance,access_instance,model_vex_instance,,1,1,1,1
+vex_import,vex_import,model_vexlines_import,,1,1,1,1
+state,state,model_vex_instance_status_orders,,1,1,1,1
+stateo,stateo,model_vex_status_orders,,1,1,1,1
+vexss,vexsss,model_vex_synchro,,1,1,1,1
+msg,msg,model_popup_vex,,1,1,1,1
+pr,pr,model_vex_instance_product_reemplace,,1,1,1,1
+ci,ci,model_vex_product_product_conector,,1,1,1,1

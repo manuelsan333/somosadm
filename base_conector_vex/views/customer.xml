@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Inicio Herencia Clientes -->
+
+    <record id="clientes_meli_herencia" model="ir.ui.view">
+           <field name="name">Clientes.view</field>
+           <field name="model">res.partner</field>
+           <field name="inherit_id" ref="base.view_partner_tree"/>
+           <field name="arch" type="xml">
+              <xpath expr="//field[@name='email']" position="after">
+                   <field name="server_vex"  optional="show" />
+                   <field name="id_vex"  optional="show" />
+                   <field name="conector"  optional="show" />
+              </xpath>
+           </field>
+    </record>
+    <!--
+    <record id="clientes_meli_kanban_herencia" model="ir.ui.view">
+        <field name="name">Clientes.Kanvan.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_kanban_details']" position="after">
+                <div t-if="record.server_vex.value">
+                    <i class="fa fa-fw fa-spinner"/>
+                    <field name="server_vex"  />
+                 </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="clientes_form_herencia_meli" model="ir.ui.view">
+        <field name="name">Clientes.Form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="server_vex" string="Meli Instance" attrs="{'invisible': [('server_vex', '=', False)]}" readonly="1" />
+            </xpath>
+        </field>
+    </record>
+
+    -->
+
+
+</odoo>

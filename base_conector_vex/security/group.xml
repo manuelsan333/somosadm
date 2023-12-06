@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="group_advanced_field_vex" model="res.groups">
+			<field name="name">MOSTRAR CAMPOS AVANZADOS CONECTOR VEX</field>
+			<field name="category_id" ref="base.module_category_hidden"/>
+		</record>
+	</data>
+</odoo>

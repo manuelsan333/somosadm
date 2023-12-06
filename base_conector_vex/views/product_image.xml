@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="view_images_tree">
+            <field name="name">product.image.tree</field>
+            <field name="model">product.image</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Images" >
+                    <field name="name"/>
+                    <field name="dowloaded"/>
+                </tree>
+            </field>
+        </record>
+
+	<record id="multi_dowloand_image2" model="ir.actions.server">
+			<field name="name">Dowloand Images</field>
+			<field name="model_id" ref="base_conector_vex.model_product_image"/>
+			<field name="binding_model_id" ref="base_conector_vex.model_product_image"/>
+			<field name="state">code</field>
+			<field name="code">action = records.dowloand_write_img()</field>
+    </record>
+
+	<record id="search_images" model="ir.ui.view">
+        <field name="name">product.image.search</field>
+        <field name="model">product.image</field>
+        <field name="arch" type="xml">
+            <search>
+                    <filter name="not_dowloaded" string="Not Dowloaded" domain="[('dowloaded', '=', False)]"/>
+                    <filter name="dowloaded" string="Dowloaded" domain="[('dowloaded', '=', True)]"/>
+            </search>
+        </field>
+    </record>
+
+	<!--
+    <record id="multi_dowloand_image" model="ir.actions.server">
+			<field name="name">Dowloand Images</field>
+			<field name="model_id" ref="base_conector_vex.model_product_image"/>
+			<field name="binding_model_id" ref="base_conector_vex.model_product_image"/>
+			<field name="state">code</field>
+			<field name="code">action = records.dowload_threading_images_website()</field>
+    </record>
+
+	-->
+</odoo>

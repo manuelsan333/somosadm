@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="pedidos_TREE_logs" model="ir.ui.view">
+           <field name="name">vex.logs</field>
+           <field name="model">vex.logs</field>
+           <field name="arch" type="xml">
+              <tree string="Logs">
+                <field name="type" />
+                <field name="start_date" />
+                <field name="end_date" />
+                <field name="state" />
+                <field name="page" />
+                <field name="total" />
+                <field name="server_vex" />
+              </tree>
+           </field>
+    </record>
+</odoo>

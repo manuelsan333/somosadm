@@ -1,0 +1,53 @@
+ <!--
+
+                        <button class="oe_stat_button" type="action"
+                            name="%(odoo-mercadolibre.categories_meli)d" icon="fa-cloud"
+                            attrs="{'invisible': [('argument', '!=', 'categories')]}">
+
+                            <div class="o_stat_info">
+                                <field name="total_count" class="o_stat_value"/>
+                                <span class="o_stat_text"> <field name="argument"  readonly="1"/> </span>
+                            </div>
+                        </button>
+
+                        <button class="oe_stat_button" type="action"
+                            name="%(odoo-mercadolibre.customer_meli)d" icon="fa-cloud"
+                            attrs="{'invisible': [('argument', '!=', 'customers')]}">
+
+                            <div class="o_stat_info">
+                                <field name="total_count" class="o_stat_value"/>
+                                <span class="o_stat_text"> <field name="argument"  readonly="1"/> </span>
+                            </div>
+                        </button>
+
+                        <button class="oe_stat_button" type="action"
+                            name="%(odoo-mercadolibre.orders_meli)d" icon="fa-cloud"
+                            attrs="{'invisible': [('argument', '!=', 'orders')]}">
+
+                            <div class="o_stat_info">
+                                <field name="total_count" class="o_stat_value"/>
+                                <span class="o_stat_text"> <field name="argument"  readonly="1"/> </span>
+                            </div>
+                        </button>
+
+                        <button class="oe_stat_button" type="action"
+                            name="%(odoo-mercadolibre.action_meli_questions_tree)d" icon="fa-cloud"
+                            attrs="{'invisible': [('argument', '!=', 'questions')]}">
+
+                            <div class="o_stat_info">
+                                <field name="total_count" class="o_stat_value"/>
+                                <span class="o_stat_text"> <field name="argument"  readonly="1"/> </span>
+                            </div>
+                        </button>
+
+                        <button class="oe_stat_button" type="action"
+                            name="%(odoo-mercadolibre.attributes_meli)d" icon="fa-cloud"
+                            attrs="{'invisible': [('argument', '!=', 'attributes')]}">
+
+                            <div class="o_stat_info">
+                                <field name="total_count" class="o_stat_value"/>
+                                <span class="o_stat_text"> <field name="argument"  readonly="1"/> </span>
+                            </div>
+                        </button>
+
+                        -->
